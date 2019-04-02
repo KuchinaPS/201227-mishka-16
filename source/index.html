@@ -1,12 +1,92 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Мишка</title>
+</head>
+<body>
+<header class="page-header">
+  <a class="page-header__logo" href="#">
+    <img class="page-header__logo-image" src="main-logo.jpg">
+  </a>
+  <nav class="main-navigation">
+    <button class="main-navigation__toggle" type="button">Открыть меню</button>
+    <ul class="main-navigation__list site-list">
+      <li class="site-list__item"><a href="catalog.html">Каталог товаров</a></li>
+      <li class="site-list__item"><a href="knit.html">Вязание на заказ</a></li>
+      <li class="site-list__item"><a href="#">Поиск по сайту</a></li>
+      <li class="site-list__item"><a href="#">Корзина:пока пуста</a></li>
+    </ul>
+  </nav>
+  <h1 class="page-header__title">Милые штуки ручной работы для дома</h1>
+  <section class="page-header__offers product-category">
+    <ul class="product-category__list">
+      <li class="product-category__item"><a href="#">Предметы интерьера</a></li>
+      <li class="product-category__item"><a href="#">Детские игрушки</a></li>
+    </ul>
+  </section>
+</header>
+<main class="page-main">
+  <section class="product">
+    <h2 class="product__title">Вязанные корзинки</h2>
+    <p class="product__hits">Товар недели</p>
+    <p class="product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех
+      размерах.</p>
+    <table class="product__table characters">
+      <tr>
+        <th>Цвет:</th>
+        <td>«Тиффани»/серый</td>
+      </tr>
+      <tr>
+        <th>Диаметр:</th>
+        <td>25 см</td>
+      </tr>
+      <tr>
+        <th>Высота:</th>
+        <td>15 см</td>
+      </tr>
+    </table>
+    <img class="product__image" src="product.jpg">
+    <p class="product__price">Цена: 900 руб.</p>
+    <button class="botton product__button">Заказать</button>
+  </section>
+  <section class="about-us">
+    <h2 class="about-us__title">Коротко о нас:</h2>
+    <ul class="about-us__list features">
+      <li class="features__item">Экологически
+        чистые материалы
+      </li>
+      <li class="features__item">Скандинавский стиль
+        по российской цене
+      </li>
+      <li class="features__item">Увеличивает лайки
+        на фотографиях
+      </li>
+      <li class="features__item">Связано вручную с
+        любовью и умилением
+      </li>
+      <li class="features__item">Поддержка отечественного производителя</li>
+      <li class="features__item">Поставляется в
+        подарочной упаковке
+      </li>
+    </ul>
+  </section>
+  <section class="feedback">
+    <h2 class="feedback__title">Отзывы</h2>
+  </section>
+  <section class="contacts">
+    <h2 class="contacts__title">Контакты</h2>
+  </section>
+</main>
+<footer class="page-footer">
+  <ul class="page-footer__socials social-list">
+    <li class="social-list__item"><a href="#">Инстаграм</a></li>
+    <li class="social-list__item"><a href="#">Фейсбук</a></li>
+    <li class="social-list__item"><a href="#">Твиттер</a></li>
+  </ul>
+  <p class="page-footer__copyright">Разработано</p>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+</footer>
 
-  </body>
+</body>
 </html>

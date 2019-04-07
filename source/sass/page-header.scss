@@ -1,0 +1,12 @@
+@import "variables";
+
+.page-header {
+  font-family: $base-font;
+
+  &__title {
+    font-size: 27px;
+    line-height: 30;
+    font-weight: 700;
+  }
+}
+

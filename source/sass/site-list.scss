@@ -1,0 +1,16 @@
+@import "variables";
+
+.site-list {
+  list-style: none;
+  line-height: 24px;
+  font-weight: 700;
+
+  &__link {
+    font-size: 17px;
+    color: #000000;
+    text-decoration: none;
+    display: block;
+    padding: 30px 30px 0 77px;
+  }
+}
+

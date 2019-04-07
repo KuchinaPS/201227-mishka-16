@@ -1,0 +1,10 @@
+$base-font: "Open Sans", Arial, sans-serif;
+
+@mixin link-green {
+  font-size: 19px;
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  padding: 35px 35px 0 30px;
+}
+

@@ -1,0 +1,10 @@
+@import "variables";
+
+.contacts {
+  &__title {
+    font-size: 18px;
+  }
+  &__address {
+    color: #444444;
+  }
+}

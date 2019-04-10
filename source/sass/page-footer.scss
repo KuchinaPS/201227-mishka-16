@@ -1,0 +1,10 @@
+@import "variables";
+
+.page-footer {
+  font-size: 19px;
+  line-height: 18px;
+
+  &__copyright {
+    font-weight: $font-bold;
+  }
+}

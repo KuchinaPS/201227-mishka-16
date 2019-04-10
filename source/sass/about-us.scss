@@ -1,0 +1,15 @@
+@import "variables";
+
+.about-us {
+  font-weight: $font-bold;
+
+  &__title {
+    font-size: 25px;
+  }
+
+  &__list {
+    list-style: none;
+    font-size: 17px;
+    line-height: 20px;
+  }
+}

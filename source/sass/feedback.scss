@@ -1,0 +1,23 @@
+@import "variables";
+
+.feedback {
+
+  &__title {
+    font-size: 25px;
+  }
+
+  &__content {
+    color: #444444;
+  }
+
+  &__sign {
+    font-size: 17px;
+    font-weight: $font-bold;
+
+  }
+
+  &__nickname {
+    font-size: 17px;
+    color: #444444;
+  }
+}

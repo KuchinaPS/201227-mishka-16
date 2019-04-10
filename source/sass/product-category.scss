@@ -2,18 +2,26 @@
 
 .product-category {
   background-color: #f9f9f9;
+  line-height: $middle-line-height;
+  font-weight: $font-bold;
 
   &__list {
     list-style: none;
+    padding: 0;
+  }
+
+  &__link {
+    font-size: 19px;
+    color: #ffffff;
+    display: block;
+    padding: 35px 35px 0 30px;
   }
 
   &__link__light-green {
-    @include link-green;
-    background-color: #63d1bb;
+    background-color: $light-green;
   }
 
   &__link__dark-green {
-    @include link-green;
     background-color: #56c3b2;
   }
 }

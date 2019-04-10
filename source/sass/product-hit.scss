@@ -1,0 +1,31 @@
+@import "variables";
+
+.product-hit {
+  color: #444444;
+  &__title {
+    font-size: 25px;
+    font-weight: $font-bold;
+
+  }
+
+  &__subtitle {
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: $font-bold;
+    color: $light-green;
+  }
+
+  &__description {
+    line-height: $middle-line-height;
+  }
+
+  &__table {
+    line-height: 20px;
+  }
+
+  &__price {
+    font-size: 17px;
+    line-height: $middle-line-height;
+    font-weight: $font-bold;
+  }
+}

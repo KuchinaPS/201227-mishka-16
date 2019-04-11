@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка-Каталог</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 <header class="page-header">
@@ -12,13 +13,15 @@
   <nav class="main-navigation">
     <button class="main-navigation__toggle" type="button">Открыть меню</button>
     <ul class="main-navigation__list site-list">
-      <li class="site-list__item"><a href="catalog.html">Каталог товаров</a></li>
-      <li class="site-list__item"><a href="form.html">Вязание на заказ</a></li>
-      <li class="site-list__item"><a href="#">Поиск по сайту</a></li>
-      <li class="site-list__item"><a href="#">Корзина:пока пуста</a></li>
+      <li class="site-list__item"><a class="site-list__link" href="catalog.html">Каталог товаров</a></li>
+      <li class="site-list__item"><a class="site-list__link" href="form.html">Вязание на заказ</a></li>
+      <li class="site-list__item"><a class="site-list__link" href="#">Поиск по сайту</a></li>
+      <li class="site-list__item"><a class="site-list__link" href="#">Корзина:пока пуста</a></li>
     </ul>
   </nav>
-  <h1 class="page-header__title title">Каталог товаров</h1>
+  <section class="page-header__offers product-category">
+    <h1 class="page-header__title title">Каталог товаров</h1>
+    </section>
 </header>
 <main class="page-catalog">
   <section class="catalog">
@@ -65,5 +68,10 @@
   <p class="page-footer__copyright">Разработано</p>
   <img class="page-footer__image" src="academy-logo.jpg">
 </footer>
+<section class="modal">
+  <h2 class="modal__title title">Добавить в корзину</h2>
+  <p class="modal__description">Выберите размер:</p>
+  <a class= "modal__button button">Добавить</a>
+</section>
 </body>
 </html>

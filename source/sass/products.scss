@@ -1,0 +1,19 @@
+@import "variables";
+
+.products {
+  &__title {
+    font-size: 17px;
+    line-height: $middle-line-height;
+    font-weight: $font-bold;
+  }
+
+  &__description {
+    font-size: 13px;
+    color: #444444;
+  }
+
+  &__price {
+    font-weight: $font-bold;
+    line-height: $middle-line-height;
+  }
+}

@@ -1,0 +1,9 @@
+@import "variables";
+
+.page-order {
+  &__description {
+    color: #444444;
+    font-size: 13px;
+    line-height: $middle-line-height;
+  }
+}

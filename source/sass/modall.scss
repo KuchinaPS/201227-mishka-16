@@ -1,0 +1,18 @@
+@import "variables";
+
+.modal {
+  &__title {
+    font-size: 25px;
+    font-weight: $font-bold;
+  }
+
+  &__description {
+    color: #444444;
+  }
+
+  &__button {
+    background-color: $light-green;
+    border: none;
+    color: #ffffff;
+  }
+}

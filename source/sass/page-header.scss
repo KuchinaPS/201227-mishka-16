@@ -1,0 +1,9 @@
+@import "variables";
+
+.page-header {
+  &__title {
+    font-size: 27px;
+    line-height: 30px;
+    font-weight: $font-bold;
+  }
+}

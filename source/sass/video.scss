@@ -1,0 +1,19 @@
+@import "variables";
+
+.video {
+  line-height: $middle-line-height;
+  font-size: 17px;
+
+  &__title {
+    font-weight: $font-bold;
+  }
+
+  &__description {
+    font-size: 13px;
+    color: #444444;
+  }
+
+  &__button {
+    line-height: 16px;
+  }
+}

@@ -1,6 +1,12 @@
 @import "variables";
 
 .feedback {
+  &__container {
+    width: 260px;
+    margin: 0 auto;
+    background-color: lightpink;
+  }
+
   &__title {
     font-size: 25px;
   }
@@ -17,5 +23,49 @@
   &__nickname {
     font-size: 17px;
     color: #444444;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .feedback {
+    background-color: lightblue;
+
+    &__container {
+      width: 668px;
+      background-color: lightsteelblue;
+      background-image: url("../img/review@1x.jpg");
+      background-repeat: no-repeat;
+      background-size: 350px auto;
+      background-position: 0 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &__wrap-content {
+      width: 537px;
+      display: flex;
+      flex-direction: column;
+      order: 2;
+    }
+
+    &__wrap-button {
+      order: 3;
+      align-self: flex-end;
+      background-color: palevioletred;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback {
+    &__container {
+      width: 1050px;
+      background-color: deeppink;
+    }
+
+    &__wrap-content {
+      width: 875px;
+    }
   }
 }

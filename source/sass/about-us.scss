@@ -13,3 +13,19 @@
     line-height: 20px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .about-us {
+    &__list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-us {
+
+  }
+}

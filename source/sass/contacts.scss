@@ -1,11 +1,85 @@
 @import "variables";
 
 .contacts {
+  &__wrap-address {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  &__wrap-email {
+    display: flex;
+  }
+
+  &__wrap-place {
+    display: flex;
+  }
+
   &__title {
     font-size: 18px;
+    margin-left: 30px;
   }
 
   &__address {
     color: #444444;
   }
+
+  &__button {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
 }
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    &__wrap-address {
+      margin-left: 50px;
+      margin-right: 50px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__title {
+      margin-left: 50px;
+      width: 334px;
+    }
+
+    &__wrap-email {
+      display: inline-block;
+    }
+
+    &__wrap-place {
+      display: inline-block;
+    }
+
+    &__button {
+      margin: 30px auto;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    &__container {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+
+    &__wrap-address {
+      display: block;
+    }
+
+    &__wrap-email {
+      display: flex;
+    }
+
+    &__wrap-place {
+      display: flex;
+    }
+
+    &__button {
+      margin: 0;
+    }
+  }
+}
+

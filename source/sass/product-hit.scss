@@ -2,6 +2,9 @@
 
 .product-hit {
   color: #444444;
+  margin: 0 30px;
+  display: flex;
+  flex-direction: column;
 
   &__title {
     font-size: 25px;
@@ -21,11 +24,74 @@
 
   &__table {
     line-height: 20px;
+    text-align: left;
   }
 
   &__price {
     font-size: 17px;
     line-height: $middle-line-height;
     font-weight: $font-bold;
+    text-align: center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .product-hit {
+    margin-right: 50px;
+    margin-left: 50px;
+
+    &__wrap-title {
+      display: flex;
+      background-color: palevioletred;
+    }
+
+    &__title {
+      text-align: left;
+      width: 553px;
+    }
+
+    &__subtitle {
+      text-align: center;
+      width: 115px;
+    }
+
+    &__wrap-desc {
+      width: 334px;
+    }
+
+    &__container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    &__wrap-img {
+      background-color: lightblue;
+      width: 333px;
+      height: 404px;
+    }
+
+    &__wrap {
+      background-color: lightyellow;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-hit {
+    &__title {
+      order: 2;
+    }
+
+    &__container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    &__wrap-img {
+      width: 525px;
+      height: 636px;
+    }
   }
 }

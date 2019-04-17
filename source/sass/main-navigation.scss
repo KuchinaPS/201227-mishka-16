@@ -1,1 +1,51 @@
 @import "variables";
+
+.main-navigation {
+  width: 320px;
+  margin: 0 auto;
+  background-color: bisque;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: $middle-line-height;
+    font-weight: $font-bold;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-navigation {
+    margin: 0;
+
+    &__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 501px;
+      margin: 0 auto;
+    }
+
+    &__list {
+      display: flex;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-navigation {
+    margin: 0;
+
+    &__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 1050px;
+      margin: 0 auto;
+    }
+
+    &__list {
+      display: flex;
+    }
+  }
+}

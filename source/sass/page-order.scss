@@ -2,8 +2,28 @@
 
 .page-order {
   &__description {
-    color: #444444;
-    font-size: 13px;
-    line-height: $middle-line-height;
+    color: $tundora;
+    font-size: $mobile-low;
+    line-height: $mobile-desc-line;
+    width: 260px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-order {
+    &__description {
+      width: 668px;
+      font-size: $mobile-up-desc;
+      line-height: $tablet-star-line;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-order {
+    &__description {
+      width: 1050px;
+    }
   }
 }

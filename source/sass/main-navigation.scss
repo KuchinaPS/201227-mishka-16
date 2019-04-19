@@ -9,7 +9,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    line-height: $middle-line-height;
+    line-height: $mobile-up-line;
     font-weight: $font-bold;
   }
 }
@@ -28,6 +28,7 @@
 
     &__list {
       display: flex;
+      line-height: $tablet-feature-line;
     }
   }
 }

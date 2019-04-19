@@ -1,18 +1,42 @@
 @import "variables";
 
 .modal {
+  width: 320px;
+  margin: 0 auto;
+
   &__title {
-    font-size: 25px;
+    font-size: $mobile-h2;
     font-weight: $font-bold;
+    text-align: center;
   }
 
   &__description {
-    color: #444444;
+    text-align: center;
+    color: $tundora;
   }
 
   &__button {
+    margin: 0 30px;
     background-color: $light-green;
     border: none;
     color: #ffffff;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .modal {
+    width: 567px;
+
+    &__button {
+      margin: 0 108px;
+      width: 350px;
+    }
+
+    &__title {
+      font-size: $tablet-modal;
+      line-height: $tablet-modal-line;
+      font-weight: $font-bold;
+      text-align: center;
+    }
   }
 }

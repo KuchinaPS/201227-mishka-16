@@ -8,8 +8,8 @@
   margin: 0 auto;
 
   &__title {
-    font-size: 27px;
-    line-height: 30px;
+    font-size: $mobile-h1;
+    line-height: $mobileh1-lineh;
     font-weight: $font-bold;
     text-align: center;
   }
@@ -32,6 +32,11 @@
     width: 768px;
     flex-direction: row;
     margin: 0 auto;
+
+    &__title {
+      font-size: $tablet-h1;
+      line-height: $tableth1-lineh;
+    }
 
     &__wrapper {
       width: 668px;
@@ -57,6 +62,11 @@
     width: 1150px;
     flex-direction: row;
     margin: 0 auto;
+
+    &__title {
+      font-size: $desktop-h1;
+      line-height: $desktoph1-lineh;
+    }
 
     &__wrapper {
       width: 1050px;

@@ -8,21 +8,21 @@
   }
 
   &__title {
-    font-size: 25px;
+    font-size: $mobile-h2;
   }
 
   &__content {
-    color: #444444;
+    color: $tundora;
   }
 
   &__sign {
-    font-size: 17px;
+    font-size: $mobile-up-desc;
     font-weight: $font-bold;
   }
 
   &__nickname {
-    font-size: 17px;
-    color: #444444;
+    font-size: $mobile-up-desc;
+    color: $tundora;
   }
 }
 
@@ -54,6 +54,11 @@
       align-self: flex-end;
       background-color: palevioletred;
     }
+
+    &__title {
+      font-size: $tablet-h1;
+      line-height: $tableth1-lineh;
+    }
   }
 }
 
@@ -66,6 +71,11 @@
 
     &__wrap-content {
       width: 875px;
+    }
+
+    &__title {
+      font-size: $desktop-h1;
+      line-height: $desktoph1-lineh;
     }
   }
 }

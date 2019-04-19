@@ -1,26 +1,70 @@
 @import "variables";
 
 .filter-form {
+  width: 260px;
+  margin: 0 auto;
+
   &__title {
-    font-size: 17px;
-    line-height: 16px;
+    font-size: $mobile-up-desc;
+    line-height: $mobile-form-line;
     font-weight: $font-bold;
     color: $light-green;
   }
 
   &__label-title {
-    font-size: 17px;
-    line-height: 18px;
+    font-size: $mobile-up-desc;
+    line-height: $mobile-label-line;
     font-weight: $font-bold;
   }
 
   &__bottom-star {
-    font-size: 14px;
-    line-height: 16px;
-    color: #444444;
+    font-size: $mobile-star;
+    line-height: $mobile-star-line;
+    color: $tundora;
+  }
+
+  &__group {
+    display: flex;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
   }
 
   &__button {
     background-color: #ffffff;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .filter-form {
+    width: 668px;
+
+    &__wrap {
+      display: flex;
+    }
+
+    &__bottom-star {
+      order: 2;
+      font-size: $mobile-up-desc;
+      line-height: $tablet-star-line;
+    }
+
+    &__label-title {
+      font-size: $mobile-up-sub;
+      line-height: $tablet-label-line;
+      font-weight: $font-bold;
+    }
+
+    &__group:nth-child(2n) {
+      background-color: $seashell;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .filter-form {
+    width: 1050px;
   }
 }

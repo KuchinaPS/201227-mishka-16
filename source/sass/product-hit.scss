@@ -1,35 +1,35 @@
 @import "variables";
 
 .product-hit {
-  color: #444444;
+  color: $tundora;
   margin: 0 30px;
   display: flex;
   flex-direction: column;
 
   &__title {
-    font-size: 25px;
+    font-size: $mobile-h2;
     font-weight: $font-bold;
   }
 
   &__subtitle {
-    font-size: 17px;
-    line-height: 20px;
+    font-size: $mobile-up-desc;
+    line-height: $mobile-up-line;
     font-weight: $font-bold;
     color: $light-green;
   }
 
   &__description {
-    line-height: $middle-line-height;
+    line-height: $mobile-hit-line;
   }
 
   &__table {
-    line-height: 20px;
+    line-height: $mobile-table-line;
     text-align: left;
   }
 
   &__price {
-    font-size: 17px;
-    line-height: $middle-line-height;
+    font-size: $mobile-up-desc;
+    line-height: $mobile-up-line;
     font-weight: $font-bold;
     text-align: center;
   }
@@ -53,6 +53,11 @@
     &__subtitle {
       text-align: center;
       width: 115px;
+    }
+
+    &__description {
+      font-size: $mobile-up-desc;
+      line-height: $tablet-product-line;
     }
 
     &__wrap-desc {

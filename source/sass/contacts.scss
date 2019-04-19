@@ -15,12 +15,12 @@
   }
 
   &__title {
-    font-size: 18px;
+    font-size: $mobile-contact;
     margin-left: 30px;
   }
 
   &__address {
-    color: #444444;
+    color: $tundora;
   }
 
   &__button {
@@ -39,6 +39,8 @@
     }
 
     &__title {
+      font-size: $tablet-h1;
+      line-height: $tableth1-lineh;
       margin-left: 50px;
       width: 334px;
     }
@@ -65,6 +67,11 @@
       flex-direction: row;
     }
 
+    &__title {
+      font-size: $desktop-h1;
+      line-height: $desktoph1-lineh;
+    }
+
     &__wrap-address {
       display: block;
     }
@@ -82,4 +89,3 @@
     }
   }
 }
-

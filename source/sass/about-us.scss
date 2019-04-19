@@ -4,13 +4,14 @@
   font-weight: $font-bold;
 
   &__title {
-    font-size: 25px;
+    font-size: $mobile-h2;
+    margin-left: 30px;
   }
 
   &__list {
     list-style: none;
-    font-size: 17px;
-    line-height: 20px;
+    font-size: $mobile-up-desc;
+    line-height: $mobile-up-line;
   }
 }
 
@@ -21,11 +22,20 @@
       flex-direction: row;
       flex-wrap: wrap;
     }
+
+    &__title {
+      margin-left: 50px;
+      font-size: $tablet-h1;
+      line-height: $tableth1-lineh;
+    }
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $tablet-width) {
   .about-us {
-
+    &__title {
+      font-size: $desktop-h1;
+      line-height: $desktoph1-lineh;
+    }
   }
 }

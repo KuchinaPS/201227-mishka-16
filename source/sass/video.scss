@@ -1,19 +1,38 @@
 @import "variables";
 
 .video {
-  line-height: $middle-line-height;
-  font-size: 17px;
+  font-size: $mobile-up-desc;
+  line-height: $mobile-h3-line;
+
 
   &__title {
     font-weight: $font-bold;
   }
 
   &__description {
-    font-size: 13px;
-    color: #444444;
+    font-size: $mobile-low;
+    color: $tundora;
   }
 
   &__button {
-    line-height: 16px;
+    line-height: $mobile-form-line;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .video {
+    &__description {
+      font-size: $mobile-desc;
+      line-height: $tablet-desc-line;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video {
+    &__description {
+      font-size: $mobile-up-desc;
+      line-height: $mobile-form-line;
+    }
   }
 }

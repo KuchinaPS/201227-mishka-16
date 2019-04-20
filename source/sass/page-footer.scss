@@ -1,10 +1,20 @@
 @import "variables";
 
 .page-footer {
-  font-size: 19px;
-  line-height: 18px;
+  font-size: $mobile-up-sub;
+  line-height: $tablet-label-line;
+  background-color: $seashell;
+  margin-right: 30px;
+  margin-left: 30px;
 
   &__copyright {
     font-weight: $font-bold;
+    text-align: center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    display: flex;
   }
 }

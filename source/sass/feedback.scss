@@ -1,21 +1,81 @@
 @import "variables";
 
 .feedback {
+  &__container {
+    width: 260px;
+    margin: 0 auto;
+    background-color: lightpink;
+  }
+
   &__title {
-    font-size: 25px;
+    font-size: $mobile-h2;
   }
 
   &__content {
-    color: #444444;
+    color: $tundora;
   }
 
   &__sign {
-    font-size: 17px;
+    font-size: $mobile-up-desc;
     font-weight: $font-bold;
   }
 
   &__nickname {
-    font-size: 17px;
-    color: #444444;
+    font-size: $mobile-up-desc;
+    color: $tundora;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .feedback {
+    background-color: lightblue;
+
+    &__container {
+      width: 668px;
+      background-color: lightsteelblue;
+      background-image: url("../img/review@1x.jpg");
+      background-repeat: no-repeat;
+      background-size: 350px auto;
+      background-position: 0 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &__wrap-content {
+      width: 537px;
+      display: flex;
+      flex-direction: column;
+      order: 2;
+    }
+
+    &__wrap-button {
+      order: 3;
+      align-self: flex-end;
+      background-color: palevioletred;
+    }
+
+    &__title {
+      font-size: $tablet-h1;
+      line-height: $tableth1-lineh;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback {
+    &__container {
+      width: 1050px;
+      background-color: deeppink;
+    }
+
+    &__wrap-content {
+      width: 875px;
+    }
+
+    &__title {
+      font-size: $desktop-h1;
+      line-height: $desktoph1-lineh;
+    }
   }
 }

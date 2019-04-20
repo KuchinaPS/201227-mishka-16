@@ -1,11 +1,11 @@
 @import "variables";
 
 .button {
-  border: 2px solid #444444;
-  color: #444444;
+  border: 2px solid $tundora;
+  color: $tundora;
   width: 255px;
-  font-size: 17px;
-  line-height: 20px;
+  font-size: $mobile-up-desc;
+  line-height: $mobile-up-line;
   font-weight: $font-bold;
   display: block;
   text-align: center;

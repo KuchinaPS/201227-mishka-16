@@ -17,7 +17,6 @@
   &__logo {
     width: 320px;
     height: 80px;
-    background-color: lightpink;
     display: block;
   }
 
@@ -48,11 +47,13 @@
     &__logo {
       height: 89px;
       width: 167px;
+      margin-right: 154px;
       background-color: blueviolet;
     }
 
     &__logo-image {
       margin: 0;
+      padding-top: 23px;
     }
   }
 }

@@ -4,7 +4,7 @@
   background-color: #f9f9f9;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-position: -129px -24px;
-  height: 373px;
+  height: 283px;
   line-height: $mobile-product-line;
   font-weight: $font-bold;
   width: 320px;
@@ -40,10 +40,11 @@
 @media (min-width: $tablet-width) {
   .product-category {
     background-image: url("../img/hero-tablet@1x.jpg");
-    height: 746px;
+    height: 626px;
     width: 768px;
     background-position: -233px -3px;
     line-height: $tablet-product-line;
+    margin-top: -42px;
 
     &__list {
       margin-top: 501px;
@@ -71,6 +72,16 @@
     &__link {
       font-size: $tablet-up-sub;
       line-height: $tablet-product-line;
+    }
+
+    &__delivery {
+      font-size: $mobile-desc;
+      line-height: $mobile-hit-line;
+      font-weight: 400;
+      margin-top: 18px;
+      margin-right: 51px;
+      margin-left: auto;
+      letter-spacing: 0.2px;
     }
   }
 }

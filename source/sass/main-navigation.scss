@@ -3,7 +3,6 @@
 .main-navigation {
   width: 320px;
   margin: 0 auto;
-  min-height: 72px;
 
   &__list {
     margin: 0;
@@ -23,7 +22,7 @@
     z-index: 2;
 
     display: block;
-    width: 70px;
+    width: 68px;
     height: 50px;
 
     background-color: #ffffff;
@@ -44,12 +43,12 @@
   height: 2px;
 
   background-color: #000000;
-  box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+  box-shadow: 0 6px 0 0 #000000, 0 12px 0 0 #000000;
 }
 
 .main-navigation--closed .main-navigation__toggle:active::before {
   background-color: rgba(0, 0, 0, 0.3);
-  box-shadow: 0 8px 0 0 rgba(0, 0, 0, 0.3), 0 16px 0 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 6px 0 0 rgba(0, 0, 0, 0.3), 0 12px 0 0 rgba(0, 0, 0, 0.3);
 }
 
 .main-navigation--opened .main-navigation__toggle {

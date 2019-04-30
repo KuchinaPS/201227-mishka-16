@@ -4,14 +4,19 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 320px;
-  margin: 0 auto;
+
+  //width: 320px;
+  //margin: 0 auto;
 
   &__title {
     font-size: $mobile-h1;
     line-height: $mobileh1-lineh;
     font-weight: $font-bold;
     text-align: center;
+    margin: 0 auto;
+    width: 260px;
+    padding-top: 73px;
+    letter-spacing: 1.1px;
   }
 
   &__logo {
@@ -78,11 +83,8 @@
     }
 
     &__logo {
-      height: 89px;
-      width: 167px;
-      background-color: blueviolet;
       position: absolute;
-      left: 50%;
+      left: 42%;
     }
 
     &__logo-image {

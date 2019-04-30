@@ -24,6 +24,11 @@
     font-size: $mobile-up-desc;
     color: $tundora;
   }
+
+  &__button {
+    margin-top: 28px;
+    padding: 15px 0 14px 0;
+  }
 }
 
 @media (min-width: $tablet-width) {

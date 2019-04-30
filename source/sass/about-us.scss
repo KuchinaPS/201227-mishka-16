@@ -2,14 +2,18 @@
 
 .about-us {
   font-weight: $font-bold;
+  margin-top: 70px;
 
   &__title {
     font-size: $mobile-h2;
     margin-left: 30px;
+    letter-spacing: 0.5px;
   }
 
   &__list {
     list-style: none;
+    margin: 0;
+    padding: 0;
     font-size: $mobile-up-desc;
     line-height: $mobile-up-line;
   }

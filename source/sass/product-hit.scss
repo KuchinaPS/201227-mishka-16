@@ -16,15 +16,21 @@
     line-height: $mobile-up-line;
     font-weight: $font-bold;
     color: $light-green;
+    text-transform: uppercase;
+    margin-top: -15px;
+    margin-left: -1px;
   }
 
   &__description {
     line-height: $mobile-hit-line;
+    margin-top: 6px;
+    letter-spacing: 0.6px;
   }
 
   &__table {
     line-height: $mobile-table-line;
     text-align: left;
+    margin-bottom: 27px;
   }
 
   &__price {
@@ -32,6 +38,7 @@
     line-height: $mobile-up-line;
     font-weight: $font-bold;
     text-align: center;
+    letter-spacing: 0.4px;
   }
 }
 

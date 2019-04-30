@@ -2,8 +2,67 @@
 
 .features {
   &__item {
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding: 66px 30px 19px 30px;
+    letter-spacing: 1px;
+    position: relative;
+  }
+
+  &__item:first-child {
+    padding-right: 88px;
+  }
+
+  &__item:nth-child(2) {
+    padding-right: 59px;
+  }
+
+  &__item:nth-child(3) {
+    padding-right: 83px;
+  }
+
+  &__item::before {
+    content: "";
+    position: absolute;
+    left: 34px;
+    top: 14px;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+  }
+
+  &__item--eco::before {
+    background-image: url("../img/icon-feature-flower.svg");
+    width: 32px;
+    height: 38px;
+  }
+
+  &__item--style::before {
+    background-image: url("../img/icon-feature-money.svg");
+    width: 46px;
+    height: 28px;
+  }
+
+  &__item--photo::before {
+    background-image: url("../img/icon-feature-heart.svg");
+    width: 34px;
+    height: 28px;
+  }
+
+  &__item--love::before {
+    background-image: url("../img/icon-feature-ball.svg");
+    width: 35px;
+    height: 35px;
+  }
+
+  &__item--prod::before {
+    background-image: url("../img/icon-feature-rocket.svg");
+    width: 55px;
+    height: 33px;
+  }
+
+  &__item--gift::before {
+    background-image: url("../img/icon-feature-gift.svg");
+    width: 33px;
+    height: 33px;
   }
 }
 

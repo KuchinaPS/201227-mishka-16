@@ -1,7 +1,19 @@
 @import "variables";
 
 .characters {
+  border-collapse: collapse;
+
   &__title {
     font-weight: 400;
+    width: 68px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 11px;
+    border-bottom: 1px solid #ececec;
+  }
+
+  &__desc {
+    border-bottom: 1px solid #ececec;
+    padding-right: 30px;
   }
 }

@@ -37,6 +37,21 @@
   .site-list {
     order: 0;
     margin: 0;
-    width: 700px;
+
+    &__item {
+      border-right: 1px solid #ececec;
+      padding-top: 15px;
+    }
+
+    &__link {
+      font-size: $mobile-up-desc;
+      line-height: $mobile-h3-line;
+      padding-right: 34px;
+      border-top: none;
+    }
+
+    &__item:nth-child(2) {
+      padding-left: 33px;
+    }
   }
 }

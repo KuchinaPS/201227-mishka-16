@@ -21,20 +21,55 @@
 
 @media (min-width: $tablet-width) {
   .user-list {
-    background-color: khaki;
+    //background-color: khaki;
     height: 89px;
 
     &__link--search {
       width: 83px;
-      padding: 0;
       border-left: 1px solid #ececec;
       background-color: #ffffff;
+      padding: 35px 30px 29px 30px;
+    }
+
+    &__link--search path {
+      fill: #ececec;
+    }
+
+    &__link--search:hover path {
+      fill: #63d1bb;
+    }
+
+    &__link--search:active path {
+      fill: rgba(99, 209, 187, 0.3);
     }
 
     &__link--basket {
       width: 265px;
       border-left: 1px solid #ececec;
-      padding: 31px 0 34px 80px;
+      padding: 31px 0 34px 0;
+      display: flex;
+    }
+
+    &__desc {
+      margin: 0;
+      padding-left: 30px;
+    }
+
+    &__link--basket svg {
+      margin-left: 30px;
+      margin-top: 2px;
+    }
+
+    &__link--basket path {
+      fill: #ececec;
+    }
+
+    &__link--basket:hover path {
+      fill: #63d1bb;
+    }
+
+    &__link--basket:active path {
+      fill: rgba(99, 209, 187, 0.3);
     }
   }
 }

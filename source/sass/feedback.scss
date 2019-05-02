@@ -4,25 +4,67 @@
   &__container {
     width: 260px;
     margin: 0 auto;
-    background-color: lightpink;
+
   }
 
   &__title {
     font-size: $mobile-h2;
+    margin-top: 38px;
+    letter-spacing: 0.3px;
   }
 
   &__content {
     color: $tundora;
+    margin-top: 24px;
+    letter-spacing: 0.38px;
   }
 
   &__sign {
     font-size: $mobile-up-desc;
     font-weight: $font-bold;
+    margin-top: 24px;
+    margin-bottom: 0;
+    letter-spacing: 0.7px;
   }
 
   &__nickname {
     font-size: $mobile-up-desc;
     color: $tundora;
+    margin-top: 0;
+  }
+
+  &__wrap-button {
+    margin-top: 28px;
+    margin-bottom: 38px;
+  }
+
+  &__arrow {
+    background-color: #ffffff;
+    border: 1px solid #ececec;
+    height: 52px;
+    width: 130px;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-position: 38px 12px;
+    font-size: 0;
+  }
+
+  &__arrow:hover {
+    opacity: 0.6;
+  }
+
+  &__arrow:active {
+    opacity: 0.3;
+  }
+
+  &__arrow--back {
+    margin-right: -4px;
+    margin-left: -1px;
+    background-image: url("../img/icon-left-arrow.svg");
+  }
+
+  &__arrow--next {
+    background-image: url("../img/icon-right-arrow.svg");
   }
 
   &__button {
@@ -33,36 +75,61 @@
 
 @media (min-width: $tablet-width) {
   .feedback {
-    background-color: lightblue;
+    margin-top: 40px;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 350px auto;
 
     &__container {
       width: 668px;
-      background-color: lightsteelblue;
-      background-image: url("../img/review@1x.jpg");
-      background-repeat: no-repeat;
-      background-size: 350px auto;
-      background-position: 0 0;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
     }
 
     &__wrap-content {
-      width: 537px;
+      width: 645px;
       display: flex;
       flex-direction: column;
       order: 2;
+      font-size: $mobile-up-desc;
+      line-height: $tablet-star-line;
     }
+
+    &__content {
+      margin-top: 13px;
+    }
+
+    &__sign {
+      font-size: $mobile-contact;
+      margin-top: 37px;
+    }
+
 
     &__wrap-button {
       order: 3;
       align-self: flex-end;
-      background-color: palevioletred;
+      margin-left: auto;
+      margin-top: -72px;
+      margin-right: 16px;
+    }
+
+    &__arrow {
+      border: none;
+      background-color: transparent;
+      width: 89px;
     }
 
     &__title {
       font-size: $tablet-h1;
       line-height: $tableth1-lineh;
+      margin-top: 78px;
+    }
+
+    &__button {
+      width: 175px;
+      margin-top: 78px;
+      height: 52px;
     }
   }
 }

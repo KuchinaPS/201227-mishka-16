@@ -70,6 +70,47 @@
   .features {
     &__item {
       width: 50%;
+      margin-right: -38px;
+      font-size: $tablet-up-sub;
+      line-height: $tablet-feature-line;
+      padding: 67px 38px 44px 32px;
+    }
+
+    &__item:first-child {
+      padding-right: 110px;
+    }
+
+    &__item:nth-child(2) {
+      padding-right: 76px;
+    }
+
+    &__item:nth-child(3) {
+      padding-right: 104px;
+    }
+
+    &__item--photo::before {
+      left: 42px;
+      top: 19px;
+    }
+
+    &__item--style {
+      order: 2;
+    }
+
+    &__item--photo {
+      order: 4;
+    }
+
+    &__item--love {
+      order: 1;
+    }
+
+    &__item--prod {
+      order: 3;
+    }
+
+    &__item--gift {
+      order: 6;
     }
   }
 }

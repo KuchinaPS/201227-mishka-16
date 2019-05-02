@@ -2,7 +2,6 @@
 
 .product-category {
   background-color: #f9f9f9;
-
   line-height: $mobile-product-line;
   font-weight: $font-bold;
 
@@ -59,12 +58,14 @@
     opacity: 0.5;
     right: 30px;
     top: 23px;
+    background-repeat: no-repeat;
   }
 
   &__link--light-green::after {
     width: 40px;
     height: 62px;
     background-image: url("../img/icon-interior.svg");
+
   }
 
   &__link--dark-green::after {
@@ -77,7 +78,6 @@
     opacity: 0.7;
   }
 
-
   &__link:active::after {
     opacity: 0.3;
   }
@@ -85,17 +85,19 @@
 
 @media (min-width: $tablet-width) {
   .product-category {
-    width: 768px;
+    background-color: #f9f9f9;
     line-height: $tablet-product-line;
     margin-top: -42px;
 
     &__container {
+      width: 768px;
+      margin: 0 auto;
       background-image: url("../img/hero-tablet@1x.jpg");
-      background-position: -233px -3px;
+      background-position: -191px -1px;
     }
 
     &__list {
-      margin-top: 501px;
+      margin-top: 373px;
       margin-left: 50px;
       margin-right: 50px;
       display: flex;
@@ -120,6 +122,12 @@
     &__link {
       font-size: $tablet-up-sub;
       line-height: $tablet-product-line;
+      padding: 28px 150px 29px 36px;
+    }
+
+    &__link::after {
+      right: 36px;
+      top: 31px;
     }
 
     &__delivery {

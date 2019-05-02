@@ -40,6 +40,10 @@
     text-align: center;
     letter-spacing: 0.4px;
   }
+  &__button {
+    margin-top: 28px;
+    padding: 15px 0 14px 0;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -49,22 +53,33 @@
 
     &__wrap-title {
       display: flex;
-      background-color: palevioletred;
     }
 
     &__title {
       text-align: left;
       width: 553px;
+      font-size: $tablet-h1;
+      line-height: $tableth1-lineh;
+      margin-top: 9px;
+      letter-spacing: 1.6px;
     }
 
     &__subtitle {
       text-align: center;
       width: 115px;
+      margin-top: 17px;
+      margin-left: -5px;
     }
 
     &__description {
       font-size: $mobile-up-desc;
-      line-height: $tablet-product-line;
+      line-height: $tablet-star-line;
+      margin-top: 13px;
+      padding-right: 40px;
+    }
+
+    &__table {
+      margin-top: 34px;
     }
 
     &__wrap-desc {
@@ -83,8 +98,27 @@
       height: 404px;
     }
 
+    &__image {
+      width: 333px;
+      margin-top: 20px;
+    }
+
     &__wrap {
       background-color: lightyellow;
+      margin-top: -110px;
+      margin-left: -1px;
+
+    }
+
+    &__price {
+      font-size: $tablet-up-sub;
+      line-height: $tablet-h3-line;
+    }
+
+    &__button {
+      margin-top: 34px;
+      width: 290px;
+      padding: 15px 0 14px 0;
     }
   }
 }

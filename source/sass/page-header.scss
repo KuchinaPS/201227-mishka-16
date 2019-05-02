@@ -33,32 +33,39 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
-    width: 768px;
-    flex-direction: row;
     margin: 0 auto;
 
     &__title {
       font-size: $tablet-h1;
       line-height: $tableth1-lineh;
+      width: 668px;
+      padding-top: 98px;
+      letter-spacing: 2.2px;
     }
 
     &__wrapper {
-      width: 668px;
       display: flex;
-      margin-left: 50px;
-      margin-right: auto;
+      margin: 0 auto;
     }
 
     &__logo {
       height: 89px;
       width: 167px;
       margin-right: 154px;
-      background-color: blueviolet;
+    }
+
+    &__logo:hover {
+      opacity: 0.6;
+    }
+
+    &__logo:active {
+      opacity: 0.3;
     }
 
     &__logo-image {
       margin: 0;
       padding-top: 23px;
+      width: 113px;
     }
   }
 }
@@ -85,10 +92,13 @@
     &__logo {
       position: absolute;
       left: 42%;
+      display: flex;
+      justify-content: center;
     }
 
     &__logo-image {
       margin: 0;
+      width: 149px;
     }
   }
 }

@@ -1,17 +1,26 @@
 @import "variables";
 
 .video {
-  font-size: $mobile-up-desc;
-  line-height: $mobile-h3-line;
+  &__container {
+    width: 290px;
+    margin: 0 auto;
+  }
 
 
   &__title {
     font-weight: $font-bold;
+    font-size: $mobile-up-desc;
+    line-height: $mobile-h3-line;
+    padding-left: 90px;
+    padding-right: 40px;
   }
 
   &__description {
     font-size: $mobile-low;
+    line-height: $mobile-desc-line;
     color: $tundora;
+    padding-left: 28px;
+    padding-right: 43px;
   }
 
   &__button {

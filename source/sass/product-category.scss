@@ -4,6 +4,7 @@
   background-color: #f9f9f9;
   line-height: $mobile-product-line;
   font-weight: $font-bold;
+  min-height: 177px;
 
   &__container {
     width: 320px;
@@ -91,7 +92,6 @@
 
     &__container {
       width: 768px;
-      margin: 0 auto;
       background-image: url("../img/hero-tablet@1x.jpg");
       background-position: -191px -1px;
     }
@@ -124,6 +124,9 @@
       line-height: $tablet-product-line;
       padding: 28px 150px 29px 36px;
     }
+    &__link:hover {
+      transform: translateY(-5px);
+    }
 
     &__link::after {
       right: 36px;
@@ -144,12 +147,13 @@
 
 @media (min-width: $desktop-width) {
   .product-category {
-    width: 1150px;
+    background-color: #f9f9f9;
     margin-top: 0;
 
     &__container {
-      background-image: url("../img/hero-desktop@1x.jpg");
+      width: 1150px;
       background-position: 0 0;
+      background-image: url("../img/hero-desktop@1x.jpg");
     }
 
     &__item {
@@ -170,6 +174,7 @@
 
     }
 
+
     &__nav-link:hover {
       color: rgba(0, 0, 0, 0.6);
     }
@@ -177,5 +182,15 @@
     &__nav-link:active {
       color: rgba(0, 0, 0, 0.3);
     }
+
+    &__list {
+      margin-top: 359px;
+    }
+
+    &__link {
+      padding: 28px 307px 29px 36px;
+    }
+
+
   }
 }

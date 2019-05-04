@@ -55,7 +55,6 @@
   &::before,
   &::after {
     content: "";
-
     position: absolute;
     top: 22px;
     left: 17px;
@@ -127,7 +126,7 @@
       flex-wrap: wrap;
       justify-content: space-between;
       margin: 0 auto;
-     }
+    }
 
     &__list {
       display: flex;

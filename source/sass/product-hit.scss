@@ -40,6 +40,7 @@
     text-align: center;
     letter-spacing: 0.4px;
   }
+
   &__button {
     margin-top: 28px;
     padding: 15px 0 14px 0;
@@ -93,7 +94,6 @@
     }
 
     &__wrap-img {
-      background-color: lightblue;
       width: 333px;
       height: 404px;
     }
@@ -104,7 +104,6 @@
     }
 
     &__wrap {
-      background-color: lightyellow;
       margin-top: -110px;
       margin-left: -1px;
 
@@ -133,11 +132,43 @@
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
+      margin-left: 175px;
     }
 
     &__wrap-img {
       width: 525px;
       height: 636px;
+      margin-top: -175px;
+      margin-left: 16px;
+    }
+
+    &__image {
+      width: 525px;
+      margin-top: 20px;
+    }
+
+    &__title {
+      width: 875px;
+      padding-left: 60px;
+      font-size: $desktop-h1;
+      line-height: $desktoph1-lineh;
+      z-index: 10;
+    }
+
+    &__subtitle {
+      padding-left: 51px;
+      margin-top: 20px;
+    }
+
+    &__description {
+      margin-top: 4px;
+    }
+
+    &__table {
+      margin-top: 47px;
+    }
+    &__wrap {
+      margin-left: 1px;
     }
   }
 }

@@ -114,3 +114,28 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .features {
+    &__item {
+      padding: 56px 23px 56px 32px;
+      margin-right: 0;
+    }
+
+    &__item:first-child {
+      padding-right: 110px;
+    }
+
+    &__item:nth-child(2) {
+      padding-right: 76px;
+    }
+
+    &__item:nth-child(3) {
+      padding-right: 104px;
+    }
+    &__item::before {
+      left: 36px;
+      top: 4px;
+    }
+  }
+}

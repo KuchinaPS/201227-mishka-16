@@ -59,9 +59,26 @@
       padding-top: 50px;
     }
 
+    &__logo:hover svg {
+      fill: #46c1ae;
+    }
+
+    &__logo:active svg {
+      opacity: 0.3;
+    }
+
     &__link {
       padding-top: 55px;
       margin-left: 4px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    &__container {
+      width: 1050px;
+      justify-content: space-between;
     }
   }
 }

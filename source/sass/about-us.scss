@@ -43,6 +43,13 @@
     &__title {
       font-size: $desktop-h1;
       line-height: $desktoph1-lineh;
+      padding-top: 38px;
+      padding-left: 177px;
+    }
+
+    &__list {
+      width: 700px;
+      margin-left: 193px;
     }
   }
 }

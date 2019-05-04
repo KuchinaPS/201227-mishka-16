@@ -98,6 +98,8 @@
 
     &__content {
       margin-top: 13px;
+      font-size: $mobile-up-desc;
+      line-height: $tablet-star-line;
     }
 
     &__sign {
@@ -136,18 +138,42 @@
 
 @media (min-width: $desktop-width) {
   .feedback {
+    margin-top: 34px;
+    margin-left: 50px;
+
     &__container {
       width: 1050px;
-      background-color: deeppink;
+      padding-bottom: 61px;
     }
 
     &__wrap-content {
-      width: 875px;
+      width: 935px;
+      padding-left: 150px;
     }
 
     &__title {
       font-size: $desktop-h1;
       line-height: $desktoph1-lineh;
+      margin-top: 71px;
+      padding-left: 148px;
+    }
+
+    &__content {
+      margin-top: 5px;
+    }
+
+    &__sign {
+      margin-top: 18px;
+      font-size: $mobile-up-desc;
+      line-height: $tablet-star-line;
+    }
+
+    &__wrap-button {
+      margin-right: 42px;
+    }
+
+    &__button {
+      margin-right: 24px;
     }
   }
 }

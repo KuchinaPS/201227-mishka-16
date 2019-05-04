@@ -5,10 +5,7 @@
   flex-direction: column;
   flex-wrap: wrap;
 
-  //width: 320px;
-  //margin: 0 auto;
-
-  &__title {
+   &__title {
     font-size: $mobile-h1;
     line-height: $mobileh1-lineh;
     font-weight: $font-bold;
@@ -72,8 +69,6 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
-    width: 1150px;
-    flex-direction: row;
     margin: 0 auto;
 
     &__title {
@@ -83,22 +78,31 @@
 
     &__wrapper {
       width: 1050px;
+      margin: 0 auto;
       display: flex;
-      margin-left: 50px;
-      margin-right: auto;
       position: relative;
     }
 
     &__logo {
       position: absolute;
       left: 42%;
+      top: -17%;
       display: flex;
       justify-content: center;
+      z-index: 10;
     }
 
     &__logo-image {
       margin: 0;
       width: 149px;
+    }
+
+    &__logo:hover {
+      opacity: 0.6;
+    }
+
+    &__logo:active {
+      opacity: 0.3;
     }
   }
 }

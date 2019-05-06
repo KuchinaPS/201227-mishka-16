@@ -8,12 +8,11 @@
   &__item {
     display: flex;
     flex-direction: column;
-    //background-color: lightblue;
-    margin-bottom: 10px;
+    padding-bottom: 21px;
+    margin-top: 28px;
     margin-left: 30px;
     margin-right: 30px;
     border: 1px solid #ececec;
-
   }
 
   &__item:hover {
@@ -30,6 +29,9 @@
     font-weight: $font-bold;
     cursor: pointer;
     width: 193px;
+    letter-spacing: 0.9px;
+    margin-top: 18px;
+    margin-bottom: 0;
   }
 
   &__title:hover {
@@ -44,20 +46,19 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-top: 29px;
   }
 
   &__description {
     font-size: $mobile-low;
     color: $tundora;
+    margin-top: 7px;
   }
 
   &__price {
     font-weight: $font-bold;
     line-height: $mobile-hit-line;
-  }
-
-  &__basket {
-    margin-top: 15px;
+    margin: 0;
   }
 
   &__basket path {
@@ -76,25 +77,49 @@
 @media (min-width: $tablet-width) {
   .products {
     width: 768px;
+    margin-top: 80px;
 
     &__item {
       flex-direction: row;
+      padding-bottom: 0;
+      margin-bottom: 53px;
+      margin-left: 50px;
+      margin-right: 50px;
     }
 
     &__img {
-      background-color: palevioletred;
+      margin-bottom: -10px;
+    }
+
+    &__image {
       width: 334px;
     }
 
     &__title {
       font-size: $tablet-up-sub;
       line-height: $tablet-h3-line;
+      width: 334px;
+      padding: 8px 60px 0 28px;
+    }
+
+    &__wrap-desc {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
     &__description {
       font-size: $mobile-desc;
       line-height: $tablet-desc-line;
+      padding-left: 29px;
     }
+
+    &__wrap-price {
+      margin-bottom: 18px;
+      padding: 0 32px 0 33px;
+    }
+
 
     &__price {
       font-size: $mobile-up-desc;
@@ -106,16 +131,26 @@
 @media (min-width: $desktop-width) {
   .products {
     display: flex;
-    width: 1150px;
+    width: 1050px;
+    margin-top: 130px;
+
+
 
     &__item {
       flex-direction: column;
+      margin: 0 52px 0 0;
+      width: 315px;
     }
 
     &__img {
-      background-color: palevioletred;
-      width: 350px;
-      min-height: 460px;
+      width: 315px;
+      min-height: 462px;
+    }
+    &__wrap-desc {
+      min-height: 197px;
+    }
+    &__wrap-price {
+      padding: 0 33px 0 25px;
     }
   }
 }

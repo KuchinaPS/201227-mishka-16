@@ -9,6 +9,9 @@
     line-height: $mobile-form-line;
     font-weight: $font-bold;
     color: $light-green;
+    text-transform: uppercase;
+    margin-left: -15px;
+    padding-top: 28px;
   }
 
   &__label-title {
@@ -16,6 +19,43 @@
     line-height: $mobile-label-line;
     font-weight: $font-bold;
   }
+
+  &__input__radio {
+    display: none;
+  }
+
+  &__label__radio {
+    position: relative;
+    width: 191px;
+    padding: 27px 0 0 50px;
+  }
+
+  &__label__radio::before {
+    content: "";
+    position: absolute;
+    top: 19px;
+    left: -12px;
+    width: 38px;
+    height: 38px;
+    border: 2px solid #444444;
+    border-radius: 50%;
+  }
+
+  &__input__radio:checked + .filter-form__label__radio::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    background-color: #62d1ba;
+    border-radius: 50%;
+  }
+
+  &__input__check {
+    display: none;
+  }
+
 
   &__bottom-star {
     font-size: $mobile-star;
@@ -25,6 +65,7 @@
 
   &__group {
     display: flex;
+    border: none;
   }
 
   &__wrapper {

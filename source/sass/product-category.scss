@@ -66,7 +66,6 @@
     width: 40px;
     height: 62px;
     background-image: url("../img/icon-interior.svg");
-
   }
 
   &__link--dark-green::after {
@@ -89,6 +88,7 @@
     background-color: #f9f9f9;
     line-height: $tablet-product-line;
     margin-top: -42px;
+    min-height: 224px;
 
     &__container {
       width: 768px;
@@ -149,6 +149,7 @@
   .product-category {
     background-color: #f9f9f9;
     margin-top: 0;
+    min-height: 250px;
 
     &__container {
       width: 1150px;
@@ -158,6 +159,11 @@
 
     &__item {
       width: 525px;
+    }
+
+    &__nav-wrap {
+      width: 1050px;
+      margin: 0 auto;
     }
 
     &__nav-list {
@@ -171,9 +177,7 @@
 
     &__nav-link {
       letter-spacing: 0.6px;
-
     }
-
 
     &__nav-link:hover {
       color: rgba(0, 0, 0, 0.6);
@@ -190,7 +194,5 @@
     &__link {
       padding: 28px 307px 29px 36px;
     }
-
-
   }
 }

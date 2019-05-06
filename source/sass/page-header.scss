@@ -5,7 +5,7 @@
   flex-direction: column;
   flex-wrap: wrap;
 
-   &__title {
+  &__title {
     font-size: $mobile-h1;
     line-height: $mobileh1-lineh;
     font-weight: $font-bold;
@@ -38,6 +38,10 @@
       width: 668px;
       padding-top: 98px;
       letter-spacing: 2.2px;
+    }
+
+    &__inner-title {
+      padding-top: 40px;
     }
 
     &__wrapper {

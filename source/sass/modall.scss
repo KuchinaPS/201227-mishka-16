@@ -2,41 +2,55 @@
 
 .modal {
   width: 320px;
+  min-height: 336px;
   margin: 0 auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  border: 1px solid #c7c7c7;
+  box-shadow: 0 5px 10px #c7c7c7;
+  padding: 30px;
+  display: none;
+  z-index: 15;
 
   &__title {
     font-size: $mobile-h2;
+    line-height: $mobile-form-title;
     font-weight: $font-bold;
+    width: 144px;
+    margin: 0 auto;
+    text-transform: uppercase;
     text-align: center;
   }
 
-  &__description {
-    text-align: center;
-    color: $tundora;
+  &__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
   }
 
-  &__button {
-    margin: 0 30px;
-    background-color: $light-green;
-    border: none;
-    color: #ffffff;
+  &__overlay--show {
+    display: block;
   }
 }
 
 @media (min-width: $tablet-width) {
   .modal {
     width: 567px;
-
-    &__button {
-      margin: 0 108px;
-      width: 350px;
-    }
+    min-height: 336px;
 
     &__title {
       font-size: $tablet-modal;
       line-height: $tablet-modal-line;
       font-weight: $font-bold;
       text-align: center;
+      width: 351px;
     }
   }
 }

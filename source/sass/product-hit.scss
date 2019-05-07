@@ -16,15 +16,21 @@
     line-height: $mobile-up-line;
     font-weight: $font-bold;
     color: $light-green;
+    text-transform: uppercase;
+    margin-top: -15px;
+    margin-left: -1px;
   }
 
   &__description {
     line-height: $mobile-hit-line;
+    margin-top: 6px;
+    letter-spacing: 0.6px;
   }
 
   &__table {
     line-height: $mobile-table-line;
     text-align: left;
+    margin-bottom: 27px;
   }
 
   &__price {
@@ -32,6 +38,12 @@
     line-height: $mobile-up-line;
     font-weight: $font-bold;
     text-align: center;
+    letter-spacing: 0.4px;
+  }
+
+  &__button {
+    margin-top: 28px;
+    padding: 15px 0 14px 0;
   }
 }
 
@@ -42,22 +54,33 @@
 
     &__wrap-title {
       display: flex;
-      background-color: palevioletred;
     }
 
     &__title {
       text-align: left;
       width: 553px;
+      font-size: $tablet-h1;
+      line-height: $tableth1-lineh;
+      margin-top: 9px;
+      letter-spacing: 1.6px;
     }
 
     &__subtitle {
       text-align: center;
       width: 115px;
+      margin-top: 17px;
+      margin-left: -5px;
     }
 
     &__description {
       font-size: $mobile-up-desc;
-      line-height: $tablet-product-line;
+      line-height: $tablet-star-line;
+      margin-top: 13px;
+      padding-right: 40px;
+    }
+
+    &__table {
+      margin-top: 34px;
     }
 
     &__wrap-desc {
@@ -71,13 +94,29 @@
     }
 
     &__wrap-img {
-      background-color: lightblue;
       width: 333px;
       height: 404px;
     }
 
+    &__image {
+      width: 333px;
+      margin-top: 20px;
+    }
+
     &__wrap {
-      background-color: lightyellow;
+      margin-top: -110px;
+      margin-left: -1px;
+    }
+
+    &__price {
+      font-size: $tablet-up-sub;
+      line-height: $tablet-h3-line;
+    }
+
+    &__button {
+      margin-top: 34px;
+      width: 290px;
+      padding: 15px 0 14px 0;
     }
   }
 }
@@ -86,17 +125,47 @@
   .product-hit {
     &__title {
       order: 2;
+      width: 875px;
+      padding-left: 60px;
+      font-size: $desktop-h1;
+      line-height: $desktoph1-lineh;
+      z-index: 10;
     }
 
     &__container {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
+      margin-left: 175px;
     }
 
     &__wrap-img {
       width: 525px;
       height: 636px;
+      margin-top: -175px;
+      margin-left: 16px;
+    }
+
+    &__image {
+      width: 525px;
+      margin-top: 20px;
+    }
+
+    &__subtitle {
+      padding-left: 51px;
+      margin-top: 20px;
+    }
+
+    &__description {
+      margin-top: 4px;
+    }
+
+    &__table {
+      margin-top: 47px;
+    }
+
+    &__wrap {
+      margin-left: 1px;
     }
   }
 }

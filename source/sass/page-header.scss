@@ -4,20 +4,21 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 320px;
-  margin: 0 auto;
 
   &__title {
     font-size: $mobile-h1;
     line-height: $mobileh1-lineh;
     font-weight: $font-bold;
     text-align: center;
+    margin: 0 auto;
+    width: 260px;
+    padding-top: 73px;
+    letter-spacing: 1.1px;
   }
 
   &__logo {
     width: 320px;
     height: 80px;
-    background-color: lightpink;
     display: block;
   }
 
@@ -29,38 +30,49 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
-    width: 768px;
-    flex-direction: row;
     margin: 0 auto;
 
     &__title {
       font-size: $tablet-h1;
       line-height: $tableth1-lineh;
+      width: 668px;
+      padding-top: 98px;
+      letter-spacing: 2.2px;
+    }
+
+    &__inner-title {
+      padding-top: 40px;
     }
 
     &__wrapper {
-      width: 668px;
       display: flex;
-      margin-left: 50px;
-      margin-right: auto;
+      margin: 0 auto;
     }
 
     &__logo {
       height: 89px;
       width: 167px;
-      background-color: blueviolet;
+      margin-right: 154px;
+    }
+
+    &__logo:hover {
+      opacity: 0.6;
+    }
+
+    &__logo:active {
+      opacity: 0.3;
     }
 
     &__logo-image {
       margin: 0;
+      padding-top: 23px;
+      width: 113px;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
-    width: 1150px;
-    flex-direction: row;
     margin: 0 auto;
 
     &__title {
@@ -70,22 +82,31 @@
 
     &__wrapper {
       width: 1050px;
+      margin: 0 auto;
       display: flex;
-      margin-left: 50px;
-      margin-right: auto;
       position: relative;
     }
 
     &__logo {
-      height: 89px;
-      width: 167px;
-      background-color: blueviolet;
       position: absolute;
-      left: 50%;
+      left: 42%;
+      top: -17%;
+      display: flex;
+      justify-content: center;
+      z-index: 10;
     }
 
     &__logo-image {
       margin: 0;
+      width: 149px;
+    }
+
+    &__logo:hover {
+      opacity: 0.6;
+    }
+
+    &__logo:active {
+      opacity: 0.3;
     }
   }
 }

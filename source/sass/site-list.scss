@@ -3,16 +3,32 @@
 .site-list {
   &__link {
     display: block;
-    padding: 30px 30px 0 77px;
+    padding: 26px 30px 29px 77px;
+    font-size: $mobile-up-desc;
+    line-height: $mobile-h3-line;
+    border-top: 1px solid #ececec;
+    letter-spacing: 0.7px;
+  }
+
+  &__link:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &__link:active {
+    color: rgba(0, 0, 0, 0.3);
   }
 }
 
 @media (min-width: $tablet-width) {
   .site-list {
-    background-color: lightblue;
     order: 2;
-    margin-left: -167px;
-    width: 668px;
+    margin-left: -322px;
+
+    &__link {
+      padding: 17px 34px 0 0;
+      font-size: $mobile-desc;
+      line-height: $mobile-hit-line;
+    }
   }
 }
 
@@ -20,6 +36,21 @@
   .site-list {
     order: 0;
     margin: 0;
-    width: 700px;
+
+    &__item {
+      border-right: 1px solid #ececec;
+      padding-top: 15px;
+    }
+
+    &__link {
+      font-size: $mobile-up-desc;
+      line-height: $mobile-h3-line;
+      padding-right: 34px;
+      border-top: none;
+    }
+
+    &__item:nth-child(2) {
+      padding-left: 33px;
+    }
   }
 }

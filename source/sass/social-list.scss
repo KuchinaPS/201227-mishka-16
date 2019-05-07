@@ -3,4 +3,38 @@
 .social-list {
   list-style: none;
   display: flex;
+  margin-bottom: 0;
+
+  &__item {
+    padding: 31px 0 41px 0;
+  }
+
+  &__link {
+    display: inline-block;
+    vertical-align: baseline;
+    padding-left: 44px;
+  }
+
+  &__link:hover path {
+    fill: #63d1bb;
+  }
+
+  &__link:active path {
+    fill: rgba(99, 209, 187, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social-list {
+    padding-right: 9px;
+    margin-top: 32px;
+
+    &__item {
+      padding: 31px 0 0 0;
+    }
+
+    &__link {
+      padding-left: 43px;
+    }
+  }
 }

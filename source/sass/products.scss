@@ -134,8 +134,6 @@
     width: 1050px;
     margin-top: 130px;
 
-
-
     &__item {
       flex-direction: column;
       margin: 0 52px 0 0;
@@ -146,9 +144,11 @@
       width: 315px;
       min-height: 462px;
     }
+
     &__wrap-desc {
       min-height: 197px;
     }
+
     &__wrap-price {
       padding: 0 33px 0 25px;
     }

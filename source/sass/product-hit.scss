@@ -106,7 +106,6 @@
     &__wrap {
       margin-top: -110px;
       margin-left: -1px;
-
     }
 
     &__price {
@@ -126,6 +125,11 @@
   .product-hit {
     &__title {
       order: 2;
+      width: 875px;
+      padding-left: 60px;
+      font-size: $desktop-h1;
+      line-height: $desktoph1-lineh;
+      z-index: 10;
     }
 
     &__container {
@@ -147,14 +151,6 @@
       margin-top: 20px;
     }
 
-    &__title {
-      width: 875px;
-      padding-left: 60px;
-      font-size: $desktop-h1;
-      line-height: $desktoph1-lineh;
-      z-index: 10;
-    }
-
     &__subtitle {
       padding-left: 51px;
       margin-top: 20px;
@@ -167,6 +163,7 @@
     &__table {
       margin-top: 47px;
     }
+
     &__wrap {
       margin-left: 1px;
     }

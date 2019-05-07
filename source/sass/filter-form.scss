@@ -1,8 +1,31 @@
 @import "variables";
 
 .filter-form {
-  width: 260px;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  &__wrapper {
+    width: 260px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-top: 14px;
+  }
+
+  &__group {
+    border: none;
+    margin-top: 31px;
+    padding: 0;
+  }
+
+  &__group__phone {
+    margin-top: 25px;
+  }
+
+  &__group__mail {
+    margin-top: 20px;
+  }
 
   &__title {
     font-size: $mobile-up-desc;
@@ -10,14 +33,16 @@
     font-weight: $font-bold;
     color: $light-green;
     text-transform: uppercase;
-    margin-left: -15px;
-    padding-top: 28px;
+    display: block;
+    width: 260px;
+    margin: 0 auto;
   }
 
   &__label-title {
     font-size: $mobile-up-desc;
     line-height: $mobile-label-line;
     font-weight: $font-bold;
+    padding-top: 15px;
   }
 
   &__input__radio {
@@ -26,15 +51,15 @@
 
   &__label__radio {
     position: relative;
-    width: 191px;
-    padding: 27px 0 0 50px;
+    width: 206px;
+    padding: 17px 0 8px 65px;
   }
 
   &__label__radio::before {
     content: "";
     position: absolute;
-    top: 19px;
-    left: -12px;
+    top: 7px;
+    left: 0;
     width: 38px;
     height: 38px;
     border: 2px solid #444444;
@@ -44,8 +69,8 @@
   &__input__radio:checked + .filter-form__label__radio::after {
     content: "";
     position: absolute;
-    top: 30px;
-    left: 0;
+    top: 19px;
+    left: 11px;
     width: 16px;
     height: 16px;
     background-color: #62d1ba;
@@ -56,34 +81,93 @@
     display: none;
   }
 
+  &__label__check {
+    position: relative;
+    width: 191px;
+    padding: 28px 0 16px 63px;
+  }
+
+  &__label__check::before {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 0;
+    width: 39px;
+    height: 39px;
+    border: 2px solid black;
+  }
+
+  &__input__check:checked + .filter-form__label__check::after {
+    content: "";
+    position: absolute;
+    top: 23px;
+    left: 4px;
+    width: 37px;
+    height: 37px;
+    background-image: url("../img/icon-tick.svg");
+    background-repeat: no-repeat;
+  }
+
+  &__input[type="text"] {
+    border: none;
+    border-bottom: 2px solid #000000;
+    margin: 9px 0 7px;
+    width: 260px;
+    padding: 8px 0 14px 0;
+  }
+
+  &__input[type="text"]::placeholder {
+    font-size: $mobile-up-desc;
+    line-height: $mobile-label-line;
+  }
+
+  &__field {
+    margin-top: 2px;
+    width: 258px;
+    min-height: 142px;
+    border: 2px solid #444444;
+    resize: none;
+    padding: 16px 10px 10px 14px;
+    font-size: $mobile-up-desc;
+    line-height: $mobile-label-line;
+  }
 
   &__bottom-star {
     font-size: $mobile-star;
     line-height: $mobile-star-line;
     color: $tundora;
+    margin-top: 4px;
   }
 
-  &__group {
-    display: flex;
-    border: none;
-  }
-
-  &__wrapper {
-    display: flex;
-    flex-direction: column;
+  &__icon {
+    position: absolute;
+    right: 6px;
+    top: 20px;
   }
 
   &__button {
     background-color: #ffffff;
+    margin-top: 15px;
+    margin-bottom: 36px;
+    padding: 15px 0 15px 0;
   }
 }
 
 @media (min-width: $tablet-width) {
   .filter-form {
-    width: 668px;
+    &__title {
+      margin: 0 auto;
+      width: 668px;
+      padding: 45px 0 0;
+    }
 
-    &__wrap {
+    &__wrapper {
+      padding: 0;
       display: flex;
+      width: 614px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
     }
 
     &__bottom-star {
@@ -98,14 +182,41 @@
       font-weight: $font-bold;
     }
 
+    &__label__radio {
+      width: 316px;
+      padding: 42px 0px 0px 44px;
+    }
+
+    &__label__radio::before {
+      top: 0px;
+      left: -38px;
+      width: 53px;
+      height: 51px;
+    }
+
+    &__input__radio:checked + .filter-form__label__radio::after {
+      top: 15px;
+      left: -23px;
+      width: 22px;
+      height: 22px;
+    }
+
+    &__input[type="text"] {
+      width: 501px;
+    }
+
+    &__field {
+      width: 501px;
+    }
+
     &__group:nth-child(2n) {
       background-color: $seashell;
     }
   }
 }
 
-@media (min-width: $desktop-width) {
-  .filter-form {
-    width: 1050px;
-  }
-}
+//@media (min-width: $desktop-width) {
+//  .filter-form {
+//
+//  }
+//}

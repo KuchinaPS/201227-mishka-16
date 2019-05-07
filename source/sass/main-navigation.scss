@@ -20,13 +20,10 @@
     top: -64px;
     right: 0;
     z-index: 2;
-
     display: block;
     width: 68px;
     height: 50px;
-
     background-color: #ffffff;
-
     cursor: pointer;
     border: none;
   }
@@ -34,14 +31,11 @@
 
 .main-navigation--closed .main-navigation__toggle::before {
   content: "";
-
   position: absolute;
   top: 15px;
   left: 17px;
-
   width: 20px;
   height: 2px;
-
   background-color: #000000;
   box-shadow: 0 6px 0 0 #000000, 0 12px 0 0 #000000;
 }
@@ -60,7 +54,6 @@
     left: 17px;
     width: 26px;
     height: 2px;
-
     background-color: #000000;
   }
 

@@ -3,8 +3,10 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
-  <link href="css/style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
   <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 <header class="page-header">
@@ -16,7 +18,7 @@
         <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип">
       </picture>
     </a>
-    <nav class="main-navigation main-navigation--nojs">
+    <nav class="main-navigation main-navigation__button-menu--nojs">
       <div class="main-navigation__wrapper">
         <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-navigation__list site-list">
@@ -47,13 +49,11 @@
   <section class="page-header__offers product-category">
     <div class="product-category__container">
       <div class="product-category__nav-wrap">
-        <nav class="product-category__nav-under">
           <ul class="product-category__nav-list">
             <li class="product-category__nav-item"><a class="product-category__nav-link" href="#">Новые поступления</a>
             </li>
             <li class="product-category__nav-item"><a class="product-category__nav-link" href="#">Распродажа</a></li>
           </ul>
-        </nav>
         <p class="product-category__delivery">Бесплатная доставка по России</p>
       </div>
       <h1 class="page-header__title">Милые штуки ручной<br> работы для дома</h1>
@@ -141,7 +141,7 @@
           стали
           более стильными, а также набирают больше лайков! </p>
         <p class="feedback__sign">Анастасия Красильникова</p>
-        <p class="feedback__nickname">@misssssiskras</p>
+        <a class="feedback__nickname">@misssssiskras</a>
       </div>
       <div class="feedback__wrap-button">
         <button class="feedback__arrow feedback__arrow--back" type="button">Назад</button>

@@ -1,15 +1,15 @@
 var navMain = document.querySelector('.main-navigation');
 window.addEventListener('DOMContentLoaded', function () {
-  navMain.classList.remove('main-navigation--nojs');
-  navMain.classList.add('main-navigation--closed');
+  navMain.classList.remove('main-navigation__button-menu--nojs');
+  navMain.classList.add('main-navigation__button-menu--closed');
 });
 document.querySelector('.main-navigation__toggle').addEventListener('click', function () {
-  if (navMain.classList.contains('main-navigation--closed')) {
-    navMain.classList.remove('main-navigation--closed');
-    navMain.classList.add('main-navigation--opened');
+  if (navMain.classList.contains('main-navigation__button-menu--closed')) {
+    navMain.classList.remove('main-navigation__button-menu--closed');
+    navMain.classList.add('main-navigation__button-menu--opened');
   } else {
-    navMain.classList.add('main-navigation--closed');
-    navMain.classList.remove('main-navigation--opened');
+    navMain.classList.add('main-navigation__button-menu--closed');
+    navMain.classList.remove('main-navigation__button-menu--opened');
   }
 });
 document.body.addEventListener('click', function (event) {

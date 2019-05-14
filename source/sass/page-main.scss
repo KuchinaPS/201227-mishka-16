@@ -1,21 +1,19 @@
 @import "variables";
 
 .page-main {
-  width: 320px;
-  margin: 0 auto;
   margin-top: 7px;
 }
 
 @media (min-width: $tablet-width) {
   .page-main {
-    width: 768px;
+
     margin-top: 40px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-main {
-    width: 1150px;
+
     margin-top: 119px;
   }
 }

@@ -2,9 +2,9 @@
 
 .product-hit {
   color: $tundora;
-  margin: 0 30px;
   display: flex;
   flex-direction: column;
+  padding: 0 30px;
 
   &__title {
     font-size: $mobile-h2;
@@ -49,8 +49,7 @@
 
 @media (min-width: $tablet-width) {
   .product-hit {
-    margin-right: 50px;
-    margin-left: 50px;
+    padding: 0 50px;
 
     &__wrap-title {
       display: flex;
@@ -87,7 +86,7 @@
       width: 334px;
     }
 
-    &__container {
+    &__wrapper {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
@@ -132,7 +131,7 @@
       z-index: 10;
     }
 
-    &__container {
+    &__wrapper {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;

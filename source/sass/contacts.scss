@@ -2,7 +2,23 @@
 
 .contacts {
   margin-top: 87px;
-  margin-bottom: 37px;
+  margin-bottom: 22px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 6px;
+    top: -43px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-size: auto 6px;
+  }
+
+  &__wrapper {
+    padding: 15px 0;
+  }
 
   &__wrap-address {
     margin-left: 30px;
@@ -19,7 +35,8 @@
 
   &__title {
     font-size: $mobile-contact;
-    margin-left: 30px;
+    width: 260px;
+    margin: 0 auto;
   }
 
   &__address {
@@ -65,10 +82,16 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
-    margin-top: 122px;
-    margin-bottom: 57px;
+    margin-top: 112px;
+    margin-bottom: 0;
 
-    &__container {
+    &::before {
+      height: 17px;
+      top: -44px;
+      background-size: auto 17px;
+    }
+
+    &__wrapper {
       padding-top: 1px;
     }
 
@@ -82,12 +105,12 @@
     &__title {
       font-size: $tablet-h1;
       line-height: $tableth1-lineh;
-      margin: 0 53px 0 50px;
       padding: 35px 0 37px 0;
       letter-spacing: 1.5px;
       background-image: url("../img/icon-flag.svg");
       background-repeat: no-repeat;
       background-position: right;
+      width: 668px;
     }
 
     &__wrap-email {
@@ -119,7 +142,7 @@
     }
 
     &__button {
-      margin: 45px auto;
+      margin: 44px auto;
       width: 230px;
     }
   }
@@ -130,7 +153,13 @@
     margin-top: 160px;
     margin-bottom: 96px;
 
-    &__container {
+    &::before {
+      height: 23px;
+      top: -92px;
+      background-size: auto 23px;
+    }
+
+    &__wrapper {
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;

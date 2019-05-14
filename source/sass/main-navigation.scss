@@ -1,9 +1,6 @@
 @import "variables";
 
 .main-navigation {
-  width: 320px;
-  margin: 0 auto;
-
   &__list {
     margin: 0;
     padding: 0;
@@ -17,7 +14,7 @@
 
   &__toggle {
     position: absolute;
-    top: -64px;
+    top: -63px;
     right: 0;
     z-index: 2;
     display: block;
@@ -111,15 +108,11 @@
 
 @media (min-width: $tablet-width) {
   .main-navigation {
-    margin: 0;
-    box-sizing: border-box;
-    width: 347px;
-
     &__wrapper {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      margin: 0 auto;
+      width: 347px;
     }
 
     &__list {
@@ -135,18 +128,12 @@
 
 @media (min-width: $desktop-width) {
   .main-navigation {
-    margin: 0;
-
-    &__wrapper {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      width: 1050px;
-      margin: 0 auto;
-    }
-
     &__list {
       display: flex;
+    }
+
+    &__wrapper {
+      width: 1050px;
     }
   }
 }

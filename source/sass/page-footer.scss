@@ -5,11 +5,6 @@
   line-height: $tablet-label-line;
   background-color: $seashell;
 
-  &__container {
-    margin: 0 auto;
-    width: 320px;
-  }
-
   &__link {
     display: flex;
   }
@@ -47,10 +42,10 @@
 
 @media (min-width: $tablet-width) {
   .page-footer {
-    &__container {
-      width: 668px;
+    &__wrapper {
       display: flex;
-      padding-bottom: 30px;
+      padding: 0 50px;
+      flex-wrap: wrap;
     }
 
     &__logo {
@@ -69,16 +64,16 @@
 
     &__link {
       padding-top: 55px;
-      margin-left: 4px;
+      margin-left: 2px;
     }
   }
 }
 
-@media (min-width: $desktop-width) {
-  .page-footer {
-    &__container {
-      width: 1050px;
-      justify-content: space-between;
-    }
-  }
-}
+//@media (min-width: $desktop-width) {
+//  .page-footer {
+//    &__container {
+//      width: 1050px;
+//      justify-content: space-between;
+//    }
+//  }
+//}

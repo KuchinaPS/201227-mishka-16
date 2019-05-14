@@ -12,6 +12,14 @@
     flex-direction: column;
   }
 
+  &__container:hover {
+    box-shadow: 0 6px 10px 0 #ececec;
+  }
+
+  &__container:active {
+    box-shadow: 0 3px 5px 0 #ececec;
+  }
+
   &__title {
     font-weight: $font-bold;
     font-size: $mobile-up-desc;
@@ -39,20 +47,30 @@
     order: 3;
   }
 
-  &__wrap-img {
-    position: relative;
+  &__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     order: 1;
+    background-image: url("../img/video-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    height: 150px;
   }
 
-  &__wrap-img::before {
-    content: "";
-    position: absolute;
-    background-image: url("../img/icon-play.svg");
-    width: 100px;
-    height: 77px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  &__play-button {
+    border: none;
+    width: 115px;
+    height: 82px;
+    background-color: transparent;
+  }
+
+  &__play-button:hover {
+    transform: scale(1.2);
+  }
+
+  &__play-button:active {
+    transform: scale(0.8);
+    opacity: 0.3;
   }
 
   &__button {
@@ -75,6 +93,12 @@
       flex-direction: column;
     }
 
+    &__image {
+      background-image: url("../img/video-tablet@1x.jpg");
+      width: 668px;
+      height: 455px;
+    }
+
     &__title {
       font-size: $tablet-up-sub;
       line-height: $tablet-h3-line;
@@ -86,11 +110,6 @@
 
     &__wrap {
       order: 3;
-    }
-
-    &__image {
-      width: 668px;
-      min-height: 455px;
     }
 
     &__description {
@@ -121,6 +140,12 @@
       justify-content: flex-end;
     }
 
+    &__image {
+      background-image: url("../img/video-desktop@1x.jpg");
+      width: 683px;
+      height: 455px;
+    }
+
     &__title {
       width: 347px;
       padding: 70px 60px;
@@ -129,15 +154,6 @@
     &__description {
       padding-left: 79px;
       margin-top: 0;
-    }
-
-    &__wrap-img {
-      margin-right: 19px;
-      height: 455px;
-    }
-
-    &__image {
-      width: 682px;
     }
 
     &__wrap {

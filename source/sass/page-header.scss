@@ -17,21 +17,19 @@
   }
 
   &__logo {
-    width: 320px;
     height: 80px;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   &__logo-image {
-    margin-left: 117px;
-    margin-top: 22px;
+    margin-top: 10px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .page-header {
-    margin: 0 auto;
-
     &__title {
       font-size: $tablet-h1;
       line-height: $tableth1-lineh;
@@ -46,13 +44,14 @@
 
     &__wrapper {
       display: flex;
-      margin: 0 auto;
+      width: 668px;
     }
 
     &__logo {
       height: 89px;
       width: 167px;
       margin-right: 154px;
+      display: block;
     }
 
     &__logo:hover {
@@ -73,18 +72,15 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
-    margin: 0 auto;
-
     &__title {
       font-size: $desktop-h1;
       line-height: $desktoph1-lineh;
     }
 
     &__wrapper {
-      width: 1050px;
-      margin: 0 auto;
       display: flex;
       position: relative;
+      width: 1050px;
     }
 
     &__logo {
@@ -93,6 +89,7 @@
       top: -17%;
       display: flex;
       justify-content: center;
+      align-items: flex-start;
       z-index: 10;
     }
 

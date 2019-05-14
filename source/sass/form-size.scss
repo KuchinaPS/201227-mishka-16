@@ -29,7 +29,7 @@
 
   &__input + .form-size__label {
     border: 2px solid #ececec;
-    padding: 18px 0 16px 0;
+    padding: 18px 30px 16px 30px;
   }
 
   &__input + .form-size__label:hover {
@@ -42,26 +42,7 @@
 
   &__label {
     display: flex;
-  }
-
-  &__label::before {
-    content: "";
     width: 78px;
-    text-align: center;
-    font-size: $mobile-up-desc;
-    line-height: $mobile-form-line;
-  }
-
-  &__label--size-s::before {
-    content: "S";
-  }
-
-  &__label--size-m::before {
-    content: "M";
-  }
-
-  &__label--size-l::before {
-    content: "L";
   }
 }
 

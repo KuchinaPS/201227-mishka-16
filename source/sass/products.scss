@@ -8,19 +8,22 @@
   &__item {
     display: flex;
     flex-direction: column;
-    padding-bottom: 21px;
     margin-top: 28px;
     margin-left: 30px;
     margin-right: 30px;
     border: 1px solid #ececec;
   }
 
-  &__item:hover {
+  &__wrap-desc {
+    padding: 0 28px 21px 28px;
+  }
+
+  &__wrap-desc:hover {
     box-shadow: 0 6px 10px 0 #ececec;
   }
 
-  &__wrap-desc {
-    padding: 0 28px 0 28px;
+  &__wrap-desc:active {
+    box-shadow: 0 3px 5px 0 #ececec;
   }
 
   &__title {
@@ -59,6 +62,10 @@
     font-weight: $font-bold;
     line-height: $mobile-hit-line;
     margin: 0;
+  }
+
+  &__basket {
+    cursor: pointer;
   }
 
   &__basket path {

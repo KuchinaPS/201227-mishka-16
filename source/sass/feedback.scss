@@ -1,21 +1,19 @@
 @import "variables";
 
 .feedback {
-  &__container {
-    width: 260px;
-    margin: 0 auto;
-  }
-
   &__title {
     font-size: $mobile-h2;
     margin-top: 38px;
     letter-spacing: 0.3px;
+    padding-left: 30px;
   }
 
   &__content {
     color: $tundora;
     margin-top: 24px;
     letter-spacing: 0.38px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   &__sign {
@@ -24,17 +22,19 @@
     margin-top: 24px;
     margin-bottom: 0;
     letter-spacing: 0.7px;
+    padding-left: 30px;
   }
 
   &__nickname {
     font-size: $mobile-up-desc;
     color: $tundora;
     margin-top: 0;
+    padding-left: 30px;
   }
 
   &__wrap-button {
-    margin-top: 28px;
-    margin-bottom: 38px;
+    width: 260px;
+    margin: 30px;
   }
 
   &__arrow {
@@ -67,27 +67,25 @@
   }
 
   &__button {
-    margin-top: 28px;
     padding: 15px 0 14px 0;
+    margin: 36px 30px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .feedback {
     margin-top: 40px;
-    background-image: url("../img/review@1x.jpg");
-    background-repeat: no-repeat;
-    background-size: 350px auto;
 
-    &__container {
-      width: 668px;
+    &__wrapper {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+      background-image: url("../img/review@1x.jpg");
+      background-repeat: no-repeat;
+      background-size: 350px auto;
     }
 
     &__wrap-content {
-      width: 645px;
       display: flex;
       flex-direction: column;
       order: 2;
@@ -96,22 +94,26 @@
     }
 
     &__content {
-      margin-top: 13px;
+      margin-top: 10px;
       font-size: $mobile-up-desc;
       line-height: $tablet-star-line;
+      padding-left: 50px;
+      padding-right: 50px;
     }
 
     &__sign {
       font-size: $mobile-contact;
       margin-top: 37px;
+      padding-left: 50px;
+    }
+
+    &__nickname {
+      padding-left: 50px;
     }
 
     &__wrap-button {
       order: 3;
-      align-self: flex-end;
-      margin-left: auto;
-      margin-top: -72px;
-      margin-right: 16px;
+      margin: -55px -16px 48px auto;
     }
 
     &__arrow {
@@ -124,11 +126,13 @@
       font-size: $tablet-h1;
       line-height: $tableth1-lineh;
       margin-top: 78px;
+      padding-left: 50px;
     }
 
     &__button {
       width: 175px;
       margin-top: 78px;
+      margin-right: 50px;
       height: 52px;
     }
   }
@@ -137,41 +141,46 @@
 @media (min-width: $desktop-width) {
   .feedback {
     margin-top: 34px;
-    margin-left: 50px;
 
-    &__container {
-      width: 1050px;
-      padding-bottom: 61px;
+    &__wrapper {
+      padding: 0 50px 61px;
+      background-position: 50px 0;
     }
 
     &__wrap-content {
-      width: 935px;
-      padding-left: 150px;
+      padding-left: 178px;
+      padding-right: 80px;
     }
 
     &__title {
       font-size: $desktop-h1;
       line-height: $desktoph1-lineh;
       margin-top: 71px;
-      padding-left: 148px;
+      padding-left: 178px;
     }
 
     &__content {
       margin-top: 5px;
+      padding: 0;
     }
 
     &__sign {
       margin-top: 18px;
       font-size: $mobile-up-desc;
       line-height: $tablet-star-line;
+      padding: 0;
+    }
+
+    &__nickname {
+      padding: 0;
     }
 
     &__wrap-button {
-      margin-right: 42px;
+      margin: -55px -66px 35px auto;
     }
 
     &__button {
-      margin-right: 24px;
+      margin-right: 0;
     }
   }
 }

@@ -2,21 +2,20 @@
 
 .features {
   &__item {
-    padding: 66px 30px 19px 30px;
-    letter-spacing: 1px;
+    padding: 66px 41px 19px 30px;
     position: relative;
   }
 
   &__item:first-child {
-    padding-right: 88px;
+    padding-right: 93px;
   }
 
   &__item:nth-child(2) {
-    padding-right: 59px;
+    padding-right: 66px;
   }
 
   &__item:nth-child(3) {
-    padding-right: 83px;
+    padding-right: 85px;
   }
 
   &__item::before {
@@ -73,7 +72,7 @@
       margin-right: -38px;
       font-size: $tablet-up-sub;
       line-height: $tablet-feature-line;
-      padding: 67px 38px 44px 32px;
+      padding: 67px 47px 44px 36px;
     }
 
     &__item:first-child {

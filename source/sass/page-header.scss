@@ -1,19 +1,20 @@
 @import "variables";
 
 .page-header {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 
   &__title {
     font-size: $mobile-h1;
     line-height: $mobileh1-lineh;
     font-weight: $font-bold;
     text-align: center;
-    margin: 0 auto;
-    width: 260px;
     padding-top: 73px;
-    letter-spacing: 1.1px;
+    width: 260px;
+    margin: 0 auto;
   }
 
   &__logo {
@@ -35,16 +36,15 @@
       line-height: $tableth1-lineh;
       width: 668px;
       padding-top: 98px;
-      letter-spacing: 2.2px;
     }
 
     &__inner-title {
       padding-top: 40px;
     }
 
-    &__wrapper {
-      display: flex;
-      width: 668px;
+    &__container {
+      flex-direction: row;
+      padding: 0 50px;
     }
 
     &__logo {
@@ -77,25 +77,18 @@
       line-height: $desktoph1-lineh;
     }
 
-    &__wrapper {
+    &__container {
       display: flex;
       position: relative;
-      width: 1050px;
     }
 
     &__logo {
       position: absolute;
-      left: 42%;
+      left: 43%;
       top: -17%;
       display: flex;
-      justify-content: center;
       align-items: flex-start;
       z-index: 10;
-    }
-
-    &__logo-image {
-      margin: 0;
-      width: 149px;
     }
 
     &__logo:hover {
@@ -104,6 +97,10 @@
 
     &__logo:active {
       opacity: 0.3;
+    }
+
+    &__logo-image {
+      width: 149px;
     }
   }
 }

@@ -5,11 +5,10 @@
   margin-bottom: 56px;
 
   &__container {
-    width: 260px;
-    margin: 0 auto;
     border: 1px solid #ececec;
     display: flex;
     flex-direction: column;
+    margin: 0 30px;
   }
 
   &__container:hover {
@@ -26,8 +25,7 @@
     line-height: $mobile-h3-line;
     padding-left: 90px;
     padding-right: 40px;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin: 25px 0 25px;
     background-image: url("../img/icon-video.svg");
     background-repeat: no-repeat;
     background-position: 33px 5px;
@@ -39,8 +37,8 @@
     line-height: $mobile-desc-line;
     color: $tundora;
     padding-left: 33px;
-    padding-right: 45px;
-    margin-top: 20px;
+    padding-right: 40px;
+    margin-top: 30px;
   }
 
   &__wrap {
@@ -75,9 +73,7 @@
 
   &__button {
     line-height: $mobile-form-line;
-    margin-top: 30px;
-    margin-left: 32px;
-    margin-bottom: 32px;
+    margin: 27px 0 33px 32px;
     padding: 16px 0 15px 0;
     width: 194px;
   }
@@ -88,9 +84,7 @@
     margin-bottom: 63px;
 
     &__container {
-      width: 668px;
-      display: flex;
-      flex-direction: column;
+      margin: 0 50px;
     }
 
     &__image {
@@ -102,9 +96,8 @@
     &__title {
       font-size: $tablet-up-sub;
       line-height: $tablet-h3-line;
-      padding: 6px 0 0 105px;
-      letter-spacing: 0.7px;
-      background-position: 41px 0;
+      padding: 12px 0 0 105px;
+      background-position: 41px 7px;
       order: 2;
     }
 
@@ -117,13 +110,10 @@
       line-height: $tablet-desc-line;
       margin-top: 7px;
       padding-left: 40px;
-      letter-spacing: 0.4px;
     }
 
     &__button {
-      margin-top: 20px;
-      margin-left: 40px;
-      margin-bottom: 46px;
+      margin: 35px 0 46px 40px;
       width: 584px;
     }
   }
@@ -132,9 +122,9 @@
 @media (min-width: $desktop-width) {
   .video {
     margin-top: 58px;
+    margin-bottom: 104px;
 
     &__container {
-      width: 1050px;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: flex-end;
@@ -149,22 +139,23 @@
     &__title {
       width: 347px;
       padding: 70px 60px;
+      background-position: 60px 17px;
+      margin-left: 18px;
     }
 
     &__description {
-      padding-left: 79px;
+      padding-left: 62px;
       margin-top: 0;
     }
 
     &__wrap {
-      width: 368px;
-      margin-top: -289px;
+      width: 350px;
+      margin-top: -278px;
     }
 
     &__button {
       width: 230px;
-      margin-left: 81px;
-      margin-top: 46px;
+      margin: 46px 0 0 63px;
     }
   }
 }

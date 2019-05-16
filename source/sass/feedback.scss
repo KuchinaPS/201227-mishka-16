@@ -4,14 +4,12 @@
   &__title {
     font-size: $mobile-h2;
     margin-top: 38px;
-    letter-spacing: 0.3px;
     padding-left: 30px;
   }
 
   &__content {
     color: $tundora;
     margin-top: 24px;
-    letter-spacing: 0.38px;
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -21,7 +19,6 @@
     font-weight: $font-bold;
     margin-top: 24px;
     margin-bottom: 0;
-    letter-spacing: 0.7px;
     padding-left: 30px;
   }
 
@@ -76,7 +73,7 @@
   .feedback {
     margin-top: 40px;
 
-    &__wrapper {
+    &__container {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -142,13 +139,13 @@
   .feedback {
     margin-top: 34px;
 
-    &__wrapper {
+    &__container {
       padding: 0 50px 61px;
       background-position: 50px 0;
     }
 
     &__wrap-content {
-      padding-left: 178px;
+      padding-left: 175px;
       padding-right: 80px;
     }
 
@@ -156,7 +153,7 @@
       font-size: $desktop-h1;
       line-height: $desktoph1-lineh;
       margin-top: 71px;
-      padding-left: 178px;
+      padding-left: 170px;
     }
 
     &__content {

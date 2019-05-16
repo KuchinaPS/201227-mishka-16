@@ -8,7 +8,7 @@
     font-weight: $font-bold;
   }
 
-  &__wrapper {
+  &__container {
     position: relative;
   }
 
@@ -68,7 +68,7 @@
     }
   }
 
-  &__button-menu--opened .main-navigation__wrapper {
+  &__button-menu--opened .main-navigation__container {
     position: absolute;
     background-color: #ffffff;
     top: 80px;
@@ -80,7 +80,7 @@
     display: none;
   }
 
-  &__button-menu--nojs .main-navigation__wrapper {
+  &__button-menu--nojs .main-navigation__container {
     position: static;
     min-height: 0;
   }
@@ -108,7 +108,7 @@
 
 @media (min-width: $tablet-width) {
   .main-navigation {
-    &__wrapper {
+    &__container {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -132,7 +132,7 @@
       display: flex;
     }
 
-    &__wrapper {
+    &__container {
       width: 1050px;
     }
   }

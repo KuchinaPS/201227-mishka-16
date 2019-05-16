@@ -3,11 +3,10 @@
 .user-list {
   &__link {
     display: block;
-    padding: 9px 30px 12px 30px;
+    padding: 26px 30px 30px 31px;
     border-top: 1px solid #ececec;
     font-size: $mobile-up-desc;
     line-height: $mobile-h3-line;
-    letter-spacing: 0.7px;
   }
 
   &__link:hover {
@@ -27,7 +26,6 @@
   }
 
   &__link svg {
-    margin-top: 20px;
     margin-right: 25px;
   }
 
@@ -44,7 +42,7 @@
       border: 1px solid #ececec;
       border-bottom: none;
       background-color: #ffffff;
-      padding: 15px 0 34px 31px;
+      padding: 33px 0 34px 31px;
       font-size: 0;
     }
 
@@ -79,5 +77,9 @@
 @media (min-width: $desktop-width) {
   .user-list {
     width: 350px;
+
+    &__link--basket {
+      padding: 30px 0px 34px 2px;
+    }
   }
 }

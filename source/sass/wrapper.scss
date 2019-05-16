@@ -1,18 +1,18 @@
 @import "variables";
 
-.container {
+.wrapper {
   width: 320px;
   margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
-  .container {
+  .wrapper {
     width: 768px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .container {
+  .wrapper {
     width: 1150px;
   }
 }

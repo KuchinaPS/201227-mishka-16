@@ -16,7 +16,7 @@
     background-size: auto 6px;
   }
 
-  &__wrapper {
+  &__container {
     padding: 15px 0;
   }
 
@@ -49,7 +49,6 @@
   &__address--inf {
     padding-right: 0;
     padding-left: 9px;
-    letter-spacing: 0.5px;
   }
 
   &__address--link {
@@ -76,13 +75,12 @@
     margin-right: 30px;
     margin-top: 31px;
     padding: 15px 0 14px 0;
-    letter-spacing: 1px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .contacts {
-    margin-top: 112px;
+    margin-top: 109px;
     margin-bottom: 0;
 
     &::before {
@@ -91,7 +89,7 @@
       background-size: auto 17px;
     }
 
-    &__wrapper {
+    &__container {
       padding-top: 1px;
     }
 
@@ -106,7 +104,6 @@
       font-size: $tablet-h1;
       line-height: $tableth1-lineh;
       padding: 35px 0 37px 0;
-      letter-spacing: 1.5px;
       background-image: url("../img/icon-flag.svg");
       background-repeat: no-repeat;
       background-position: right;
@@ -151,7 +148,7 @@
 @media (min-width: $desktop-width) {
   .contacts {
     margin-top: 160px;
-    margin-bottom: 96px;
+    margin-bottom: 80px;
 
     &::before {
       height: 23px;
@@ -159,7 +156,7 @@
       background-size: auto 23px;
     }
 
-    &__wrapper {
+    &__container {
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
@@ -171,14 +168,14 @@
       margin-left: 113px;
       padding-left: 109px;
       width: 525px;
-      padding-top: 73px;
+      padding-top: 75px;
       background-position: left 63px;
     }
 
     &__wrap-address {
       padding-left: 174px;
       display: block;
-      margin-right: 16px;
+      margin-right: 12px;
     }
 
     &__wrap-email {
@@ -196,7 +193,7 @@
     }
 
     &__img {
-      margin-top: -168px;
+      margin-top: -165px;
     }
 
     &__map {

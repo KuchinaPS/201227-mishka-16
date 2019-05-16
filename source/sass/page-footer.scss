@@ -28,7 +28,6 @@
     padding-right: 30px;
     margin-top: 9px;
     margin-bottom: 32px;
-    letter-spacing: 0.6px;
   }
 
   &__copyright:active {
@@ -42,7 +41,7 @@
 
 @media (min-width: $tablet-width) {
   .page-footer {
-    &__wrapper {
+    &__container {
       display: flex;
       padding: 0 50px;
       flex-wrap: wrap;
@@ -69,11 +68,10 @@
   }
 }
 
-//@media (min-width: $desktop-width) {
-//  .page-footer {
-//    &__container {
-//      width: 1050px;
-//      justify-content: space-between;
-//    }
-//  }
-//}
+@media (min-width: $desktop-width) {
+  .page-footer {
+    &__container {
+      justify-content: space-between;
+    }
+  }
+}

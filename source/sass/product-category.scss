@@ -6,7 +6,7 @@
   font-weight: $font-bold;
   min-height: 177px;
 
-  &__wrapper {
+  &__container {
     background-image: url("../img/hero-mobile@1x.jpg");
     background-position: -128px -19px;
     background-repeat: no-repeat;
@@ -28,7 +28,6 @@
     color: #ffffff;
     display: block;
     padding: 26px 150px 29px 30px;
-    letter-spacing: 1px;
     position: relative;
   }
 
@@ -56,7 +55,7 @@
     content: "";
     position: absolute;
     opacity: 0.5;
-    right: 30px;
+    right: 32px;
     top: 23px;
     background-repeat: no-repeat;
   }
@@ -103,7 +102,7 @@
       background-position: 0;
     }
 
-    &__wrapper {
+    &__container {
       background-image: url("../img/hero-tablet@1x.jpg");
       background-position: -191px -1px;
     }
@@ -152,10 +151,8 @@
       margin-top: 18px;
       margin-right: 51px;
       margin-left: auto;
-      letter-spacing: 0.2px;
     }
   }
-
 }
 
 @media (min-width: $desktop-width) {
@@ -165,7 +162,7 @@
     min-height: 250px;
 
 
-    &__wrapper {
+    &__container {
       background-position: 0 0;
       background-image: url("../img/hero-desktop@1x.jpg");
     }
@@ -175,8 +172,7 @@
     }
 
     &__nav-wrap {
-      width: 1050px;
-      margin: 0 auto;
+      padding: 0 50px;
     }
 
     &__nav-list {
@@ -184,11 +180,7 @@
     }
 
     &__nav-item {
-      padding: 19px 57px 0 0;
-    }
-
-    &__nav-link {
-      letter-spacing: 0.6px;
+      padding: 18px 62px 0 0px
     }
 
     &__nav-link:hover {

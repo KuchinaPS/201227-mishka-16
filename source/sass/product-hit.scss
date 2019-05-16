@@ -1,10 +1,12 @@
 @import "variables";
 
 .product-hit {
-  color: $tundora;
-  display: flex;
-  flex-direction: column;
-  padding: 0 30px;
+  &__container {
+    color: $tundora;
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+  }
 
   &__title {
     font-size: $mobile-h2;
@@ -24,8 +26,7 @@
   &__description {
     line-height: $mobile-hit-line;
     margin-top: 6px;
-    letter-spacing: 0.6px;
-  }
+     }
 
   &__table {
     line-height: $mobile-table-line;
@@ -38,7 +39,6 @@
     line-height: $mobile-up-line;
     font-weight: $font-bold;
     text-align: center;
-    letter-spacing: 0.4px;
   }
 
   &__button {
@@ -49,7 +49,9 @@
 
 @media (min-width: $tablet-width) {
   .product-hit {
-    padding: 0 50px;
+    &__container {
+      padding: 0 50px;
+    }
 
     &__wrap-title {
       display: flex;
@@ -61,7 +63,6 @@
       font-size: $tablet-h1;
       line-height: $tableth1-lineh;
       margin-top: 9px;
-      letter-spacing: 1.6px;
     }
 
     &__subtitle {
@@ -86,7 +87,7 @@
       width: 334px;
     }
 
-    &__wrapper {
+    &__wrap-content {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
@@ -102,7 +103,7 @@
       margin-top: 20px;
     }
 
-    &__wrap {
+    &__wrap-price {
       margin-top: -110px;
       margin-left: -1px;
     }
@@ -131,7 +132,7 @@
       z-index: 10;
     }
 
-    &__wrapper {
+    &__wrap-content {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
@@ -163,7 +164,7 @@
       margin-top: 47px;
     }
 
-    &__wrap {
+    &__wrap-price {
       margin-left: 1px;
     }
   }

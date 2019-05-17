@@ -4,6 +4,9 @@
   font-size: $mobile-up-sub;
   line-height: $tablet-label-line;
   background-color: $seashell;
+  &__container {
+    padding-bottom: 30px;
+  }
 
   &__link {
     display: flex;
@@ -43,7 +46,7 @@
   .page-footer {
     &__container {
       display: flex;
-      padding: 0 50px;
+      padding: 0 50px 30px;
       flex-wrap: wrap;
     }
 

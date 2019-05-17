@@ -225,6 +225,8 @@
       order: 2;
       font-size: $mobile-up-desc;
       line-height: $tablet-star-line;
+      margin: 0;
+      padding: 10px 0;
     }
 
     &__label-title {
@@ -302,24 +304,99 @@
       top: 10px;
     }
 
-    &__bottom-star {
-      margin: 0;
-      padding: 10px 0;
-    }
-
     &__button {
       margin: 0 0 49px 0;
       width: 230px;
     }
-
-    //&__group:nth-child(2n) {
-    //  background-color: $seashell;
-    //}
   }
 }
 
-//@media (min-width: $desktop-width) {
-//  .filter-form {
-//
-//  }
-//}
+@media (min-width: $desktop-width) {
+  .filter-form {
+    &__container-group {
+      padding: 57px 15px 26px 113px;
+    }
+
+    &__container-group--color {
+      padding: 37px 15px 42px 113px;
+    }
+
+    &__container-group--name {
+      padding: 53px 15px 23px 113px;
+    }
+
+    &__container-group--phone {
+      padding: 51px 15px 14px 113px;
+    }
+
+    &__container-group--mail {
+      padding: 0 15px 23px 113px;
+    }
+
+    &__container-group--add {
+      padding: 45px 15px 12px 113px;
+    }
+
+    &__control--color {
+      padding: 0 0 0 69px;
+      justify-content: flex-start;
+    }
+
+    &__control--name {
+      padding: 0 0 0 71px;
+      justify-content: flex-start;
+    }
+
+    &__control--phone {
+      padding: 0 0 0 54px;
+    }
+
+    &__control--mail {
+      padding: 0 0 0 32px;
+    }
+
+    &__control--add {
+      padding: 0 0 0 73px;
+    }
+
+    &__control--bottom {
+      padding: 0 225px;
+    }
+
+    &__control--radio {
+      padding: 0 0 0 112px;
+      flex-direction: column;
+    }
+
+    &__label--check {
+      width: 263px;
+    }
+
+    &__input[type="text"],
+    &__input[type="tel"],
+    &__input[type="email"] {
+      width: 573px;
+      justify-content: flex-start;
+      margin-left: 22px;
+      margin-right: 115px;
+    }
+
+    &__input--name[type="text"] {
+      width: 626px;
+      margin-right: 113px;
+    }
+
+    &__input[type="tel"],
+    &__input[type="email"] {
+      width: 700px;
+    }
+
+    &__icon {
+      right: 120px;
+    }
+
+    &__field {
+      width: 700px;
+    }
+  }
+}

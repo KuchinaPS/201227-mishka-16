@@ -45,7 +45,8 @@
     font-size: 0;
   }
 
-  &__arrow:hover {
+  &__arrow:hover,
+  &__arrow:focus {
     opacity: 0.6;
   }
 

@@ -11,7 +11,8 @@
   text-align: center;
   text-transform: uppercase;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: #444444;
     color: #ffffff;
   }

@@ -9,7 +9,8 @@
     line-height: $mobile-h3-line;
   }
 
-  &__link:hover {
+  &__link:hover,
+  &__link:focus {
     color: rgba(0, 0, 0, 0.6);
   }
 
@@ -46,7 +47,8 @@
       font-size: 0;
     }
 
-    &__link--search:hover path {
+    &__link--search:hover path,
+    &__link--search:focus path {
       fill: #63d1bb;
     }
 
@@ -64,7 +66,8 @@
       margin-top: 2px;
     }
 
-    &__link--basket:hover path {
+    &__link--basket:hover path,
+    &__link--basket:focus path {
       fill: #63d1bb;
     }
 
@@ -79,7 +82,7 @@
     width: 350px;
 
     &__link--basket {
-      padding: 30px 0px 34px 2px;
+      padding: 30px 0 34px 2px;
     }
   }
 }

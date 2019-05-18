@@ -35,7 +35,8 @@
     background-color: $light-green;
   }
 
-  &__link--light-green:hover {
+  &__link--light-green:hover,
+  &__link--light-green:focus {
     background-color: #59d5bc;
   }
 
@@ -43,7 +44,8 @@
     background-color: #56c3b2;
   }
 
-  &__link--dark-green:hover {
+  &__link--dark-green:hover,
+  &__link--dark-green:focus {
     background-color: #46c1ae;
   }
 
@@ -72,7 +74,8 @@
     background-image: url("../img/icon-toy.svg");
   }
 
-  &__link:hover::after {
+  &__link:hover::after,
+  &__link:focus::after {
     opacity: 0.7;
   }
 
@@ -135,7 +138,8 @@
       padding: 28px 150px 29px 36px;
     }
 
-    &__link:hover {
+    &__link:hover,
+    &__link:focus {
       transform: translateY(-5px);
     }
 
@@ -180,10 +184,11 @@
     }
 
     &__nav-item {
-      padding: 18px 62px 0 0px
+      padding: 18px 62px 0 0;
     }
 
-    &__nav-link:hover {
+    &__nav-link:hover,
+    &__nav-link:focus {
       color: rgba(0, 0, 0, 0.6);
     }
 

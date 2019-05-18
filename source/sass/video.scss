@@ -11,7 +11,8 @@
     margin: 0 30px;
   }
 
-  &__container:hover {
+  &__container:hover,
+  &__container:focus {
     box-shadow: 0 6px 10px 0 #ececec;
   }
 
@@ -62,7 +63,8 @@
     background-color: transparent;
   }
 
-  &__play-button:hover {
+  &__play-button:hover,
+  &__play-button:focus {
     transform: scale(1.2);
   }
 

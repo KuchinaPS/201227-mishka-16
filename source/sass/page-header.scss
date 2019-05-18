@@ -54,7 +54,8 @@
       display: block;
     }
 
-    &__logo:hover {
+    &__logo:hover,
+    &__logo:focus {
       opacity: 0.6;
     }
 

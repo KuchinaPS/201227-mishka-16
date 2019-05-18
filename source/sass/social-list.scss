@@ -13,7 +13,8 @@
     padding-left: 44px;
   }
 
-  &__link:hover path {
+  &__link:hover path,
+  &__link:focus path {
     fill: #63d1bb;
   }
 

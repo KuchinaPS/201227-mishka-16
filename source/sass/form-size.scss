@@ -32,7 +32,8 @@
     padding: 18px 30px 16px 30px;
   }
 
-  &__input + .form-size__label:hover {
+  &__input + .form-size__label:hover,
+  &__input + .form-size__label:focus {
     border: 2px solid #c7c7c7;
   }
 

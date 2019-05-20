@@ -14,14 +14,14 @@
   }
 
   &__link svg {
-    fill: #63d1bb;
+    fill: $light-green;
   }
 
   &__logo-link:hover svg,
   &__logo-link:focus svg,
   &__link:hover svg,
   &__link:focus svg {
-    fill: #46c1ae;
+    fill: $puerto-rico;
   }
 
   &__logo-link:active svg,
@@ -62,7 +62,7 @@
     }
 
     &__logo:hover svg {
-      fill: #46c1ae;
+      fill: $puerto-rico;
     }
 
     &__logo:active svg {

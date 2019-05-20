@@ -36,7 +36,7 @@
 
   &__arrow {
     background-color: #ffffff;
-    border: 1px solid #ececec;
+    border: 1px solid $gallery;
     height: 52px;
     width: 130px;
     padding: 0;
@@ -81,6 +81,11 @@
       background-image: url("../img/review@1x.jpg");
       background-repeat: no-repeat;
       background-size: 350px auto;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/review@2x.jpg");
+        background-size: 350px auto;
+      }
     }
 
     &__wrap-content {
@@ -135,6 +140,7 @@
     }
   }
 }
+
 
 @media (min-width: $desktop-width) {
   .feedback {

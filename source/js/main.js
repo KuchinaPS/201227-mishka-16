@@ -15,6 +15,11 @@ function ShowMainNavigationHandler() {
   }
 }
 
+function HideModalHandler() {
+  modal.style.display = 'none';
+  overlay.classList.remove('modal__overlay--show');
+}
+
 function ShowModalHandler(event) {
   event.preventDefault();
   modal.style.display = 'block';
@@ -22,9 +27,8 @@ function ShowModalHandler(event) {
 }
 
 function AddEventToProductBaskets(products__baskets) {
-  for(var i = 0; i < products__baskets.length; i++){
+  for(var i = 0; i < products__baskets.length; i++)
     products__baskets[i].addEventListener('click' , ShowModalHandler);
-  }
 }
 
 function Initialization(){
@@ -35,6 +39,7 @@ function Initialization(){
   if(product_hit__button) product_hit__button.addEventListener('click' , ShowModalHandler);
   if(products__baskets) AddEventToProductBaskets(products__baskets);
   if(main_navigation__toggle) main_navigation__toggle.addEventListener('click', ShowMainNavigationHandler);
+  if(overlay) overlay.addEventListener('click' , HideModalHandler);
 }
 
 Initialization();

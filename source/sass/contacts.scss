@@ -52,15 +52,15 @@
   }
 
   &__address--link {
-    border-bottom: 1px solid #62d1ba;
+    border-bottom: 1px solid $downy;
     margin-bottom: 18px;
     padding-bottom: 0;
   }
 
   &__address--link:hover,
   &__address--link:focus {
-    color: #46c1ae;
-    border-bottom: 1px solid #46c1ae;
+    color: $puerto-rico;
+    border-bottom: 1px solid $puerto-rico;
   }
 
   &__address--link:active {
@@ -69,9 +69,15 @@
 
   &__img {
     margin-top: 18px;
+    background-color: #f4e9d7;
     background-image: url("../img/map-mobile@1x.jpg");
     width: 322px;
     height: 457px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/map-mobile@2x.jpg");
+      background-size: 322px auto;
+    }
   }
 
   &__button {
@@ -133,19 +139,24 @@
       line-height: $tablet-star-line;
     }
 
+    &__map {
+      width: 768px;
+      height: 457px;
+    }
+
     &__img {
       margin-top: 33px;
       background-image: url("../img/map-tablet@1x.jpg");
       width: 768px;
       height: 457px;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/map-tablet@2x.jpg");
+        background-size: 768px auto;
+      }
     }
 
     &__img iframe {
-      width: 768px;
-      height: 457px;
-    }
-
-    &__map {
       width: 768px;
       height: 457px;
     }
@@ -204,25 +215,30 @@
       margin: -61px 0 9px 225px;
     }
 
-    &__img {
-      margin-top: -165px;
-      background-image: url("../img/map-desktop@1x.jpg");
-      width: 525px;
-      height: 457px;
-    }
-
-    &__img iframe {
-      width: 525px;
-      height: 457px;
-    }
-
     &__map {
       width: 525px;
       height: 457px;
     }
 
-    &__address--link {
-      margin-bottom: 20px;
+    &__img {
+      margin-top: -165px;
+      background-image: url("../img/map-desktop@1x.jpg");
+      width: 525px;
+      height: 457px;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/map-desktop@2x.jpg");
+        background-size: 525px auto;
+      }
+
+      &__img iframe {
+        width: 525px;
+        height: 457px;
+      }
+
+      &__address--link {
+        margin-bottom: 20px;
+      }
     }
   }
 }

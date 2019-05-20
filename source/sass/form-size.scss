@@ -28,17 +28,17 @@
   }
 
   &__input + .form-size__label {
-    border: 2px solid #ececec;
+    border: 2px solid $gallery;
     padding: 18px 30px 16px 30px;
   }
 
   &__input + .form-size__label:hover,
   &__input + .form-size__label:focus {
-    border: 2px solid #c7c7c7;
+    border: 2px solid $silver;
   }
 
   &__input:checked + .form-size__label {
-    border: 2px solid #62d1ba;
+    border: 2px solid $downy;
   }
 
   &__label {

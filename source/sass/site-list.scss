@@ -6,7 +6,7 @@
     padding: 26px 30px 29px 77px;
     font-size: $mobile-up-desc;
     line-height: $mobile-h3-line;
-    border-top: 1px solid #ececec;
+    border-top: 1px solid $gallery;
   }
 
   &__link:hover,
@@ -39,7 +39,7 @@
     margin: 0;
 
     &__item {
-      border-right: 1px solid #ececec;
+      border-right: 1px solid $gallery;
       padding-top: 15px;
     }
 

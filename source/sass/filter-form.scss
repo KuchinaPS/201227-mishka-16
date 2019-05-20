@@ -41,7 +41,7 @@
     right: 0;
     width: 198px;
     height: 1px;
-    background-color: #62d1ba;
+    background-color: $downy;
   }
 
   &__title--color {
@@ -86,7 +86,7 @@
     left: 0;
     width: 38px;
     height: 38px;
-    border: 2px solid #444444;
+    border: 2px solid $tundora;
     border-radius: 50%;
   }
 
@@ -97,17 +97,17 @@
     left: 11px;
     width: 16px;
     height: 16px;
-    background-color: #62d1ba;
+    background-color: $downy;
     border-radius: 50%;
   }
 
   &__label--radio:hover::before,
   &__label--radio:focus::before {
-    border-color: #62d1ba;
+    border-color: $downy;
   }
 
   &__label--radio:active::before {
-    border-color: #c7c7c7;
+    border-color: $silver;
   }
 
   &__input--check {
@@ -143,19 +143,19 @@
 
   &__label--check:hover::before,
   &__label--check:focus::before {
-    border-color: #62d1ba;
+    border-color: $downy;
   }
 
   &__label--check:active::before {
-    border-color: #c7c7c7;
+    border-color: $silver;
   }
 
   &__input[type="text"],
   &__input[type="tel"],
   &__input[type="email"] {
     border: none;
-    font-size: $mobile-up-sub;
-    line-height: $tablet-label-line;
+    font-size: $mobile-up-desc;
+    line-height: $mobile-label-line;
     border-bottom: 2px solid #000000;
     padding: 3px 0 11px 0;
     margin: 10px 0 10px 0;
@@ -172,7 +172,7 @@
     margin-top: 4px;
     width: 258px;
     min-height: 142px;
-    border: 2px solid #444444;
+    border: 2px solid $tundora;
     resize: none;
     padding: 16px 10px 10px 14px;
     font-size: $mobile-up-desc;
@@ -185,7 +185,7 @@
   &__field:focus,
   &__input:active,
   &__field:active {
-    border-color: #62d1ba;
+    border-color: $downy;
   }
 
   &__icon {
@@ -200,7 +200,7 @@
   &__input[type="email"]:focus + .filter-form__icon,
   &__input[type="tel"]:active + .filter-form__icon,
   &__input[type="email"]:active + .filter-form__icon {
-    fill: #62d1ba;
+    fill: $downy;
   }
 
   &__bottom-star {
@@ -221,7 +221,7 @@
 @media (min-width: $tablet-width) {
   .filter-form {
     &__group--background {
-      background-color: #f1f1f1;
+      background-color: $seashell;
     }
 
     &__container-group {
@@ -330,26 +330,41 @@
     &__input[type="text"],
     &__input[type="tel"],
     &__input[type="email"] {
+      font-size: $mobile-up-sub;
+      line-height: $tablet-label-line;
       width: 375px;
-      padding: 0 0 13px 20px;
-      margin: 8px 0 27px 0;
+      min-height: 19px;
+      padding: 8px 0 12px 0;
+      margin: 0 0 28px 0;
     }
+
+    &__input[type="text"]::placeholder,
+    &__input[type="tel"]::placeholder,
+    &__input[type="email"]::placeholder {
+      font-size: $mobile-up-sub;
+      line-height: $tablet-label-line;
+    }
+
 
     &__input[type="tel"] {
       width: 501px;
       margin-left: 6px;
-      background-color: #f1f1f1;
+      background-color: $seashell;
     }
 
     &__input[type="email"] {
       width: 502px;
       margin-left: -16px;
-      background-color: #f1f1f1;
+      background-color: $seashell;
     }
 
 
     &__input--name[type="text"] {
       width: 428px;
+    }
+
+    &__input::-ms-clear {
+      display: none;
     }
 
     &__field {

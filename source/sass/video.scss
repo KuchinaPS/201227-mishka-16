@@ -5,7 +5,7 @@
   margin-bottom: 56px;
 
   &__container {
-    border: 1px solid #ececec;
+    border: 1px solid $gallery;
     display: flex;
     flex-direction: column;
     margin: 0 30px;
@@ -13,11 +13,11 @@
 
   &__container:hover,
   &__container:focus {
-    box-shadow: 0 6px 10px 0 #ececec;
+    box-shadow: 0 6px 10px 0 $gallery;
   }
 
   &__container:active {
-    box-shadow: 0 3px 5px 0 #ececec;
+    box-shadow: 0 3px 5px 0 $gallery;
   }
 
   &__title {
@@ -51,9 +51,15 @@
     justify-content: center;
     align-items: center;
     order: 1;
+    background-color: $iceberg;
     background-image: url("../img/video-mobile@1x.jpg");
     background-repeat: no-repeat;
     height: 150px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/video-mobile@2x.jpg");
+      background-size: 260px auto;
+    }
   }
 
   &__play-button {
@@ -93,6 +99,11 @@
       background-image: url("../img/video-tablet@1x.jpg");
       width: 668px;
       height: 455px;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/video-tablet@2x.jpg");
+        background-size: 668px auto;
+      }
     }
 
     &__title {
@@ -136,6 +147,11 @@
       background-image: url("../img/video-desktop@1x.jpg");
       width: 683px;
       height: 455px;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/video-desktop@2x.jpg");
+        background-size: 683px auto;
+      }
     }
 
     &__title {

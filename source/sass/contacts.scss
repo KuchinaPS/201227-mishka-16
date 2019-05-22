@@ -83,7 +83,7 @@
   &__button {
     margin-left: 30px;
     margin-right: 30px;
-    margin-top: 31px;
+    margin-top: 38px;
     padding: 15px 0 14px 0;
   }
 }
@@ -121,9 +121,13 @@
     }
 
     &__wrap-email {
-      padding-right: 54px;
+      padding-right: 36px;
       font-size: $mobile-up-desc;
       line-height: $tablet-star-line;
+    }
+
+    &__address {
+      padding-right: 19px;
     }
 
     &__address--inf {
@@ -162,7 +166,7 @@
     }
 
     &__button {
-      margin: 44px auto;
+      margin: 56px auto 44px;
       width: 230px;
     }
   }
@@ -210,9 +214,13 @@
       display: flex;
     }
 
+    &__address--link {
+      margin-bottom: 19px;
+    }
+
     &__button {
       order: 2;
-      margin: -61px 0 9px 225px;
+      margin: -52px 0 9px 225px;
     }
 
     &__map {
@@ -230,15 +238,12 @@
         background-image: url("../img/map-desktop@2x.jpg");
         background-size: 525px auto;
       }
+    }
 
-      &__img iframe {
-        width: 525px;
-        height: 457px;
-      }
-
-      &__address--link {
-        margin-bottom: 20px;
-      }
+    &__img iframe {
+      width: 525px;
+      height: 457px;
     }
   }
 }
+

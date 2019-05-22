@@ -157,7 +157,7 @@
     font-size: $mobile-up-desc;
     line-height: $mobile-label-line;
     border-bottom: 2px solid #000000;
-    padding: 3px 0 11px 0;
+    padding: 6px 0 11px 0;
     margin: 10px 0 10px 0;
   }
 
@@ -192,6 +192,7 @@
     position: absolute;
     right: 6px;
     top: 12px;
+    fill: #cccccc;
   }
 
   &__input[type="tel"]:hover + .filter-form__icon,

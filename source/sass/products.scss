@@ -59,22 +59,32 @@
     font-weight: $font-bold;
     line-height: $mobile-hit-line;
     margin: 0;
+    position: relative;
+  }
+
+  &__price::before {
+    content: "";
+    position: absolute;
+    width: 205px;
+    height: 1px;
+    top: -24px;
+    background-color: $gallery;
   }
 
   &__basket {
     cursor: pointer;
   }
 
-  &__basket path {
+  &__basket .products__icon {
     fill: $alto;
   }
 
-  &__basket:hover path,
-  &__basket:focus path {
+  &__basket:hover .products__icon,
+  &__basket:focus .products__icon {
     fill: $light-green;
   }
 
-  &__basket:active path {
+  &__basket:active .products__icon {
     fill: $iceberg;
   }
 }
@@ -126,6 +136,10 @@
       font-size: $mobile-up-desc;
       line-height: $mobile-h3-line;
     }
+
+    &__price::before {
+      width: 268px;
+    }
   }
 }
 
@@ -135,6 +149,10 @@
     justify-content: space-between;
     margin-top: 130px;
     padding: 0 50px;
+
+    &__title {
+      padding: 10px 68px 0 25px;
+    }
 
     &__item {
       flex-direction: column;
@@ -150,9 +168,17 @@
     &__wrap-desc {
       min-height: 197px;
     }
+    &__description {
+      padding-left: 25px;
+      margin-top: 5px;
+    }
 
     &__wrap-price {
       padding: 0 33px 0 25px;
+    }
+
+    &__price::before {
+      width: 256px;
     }
   }
 }

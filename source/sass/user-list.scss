@@ -11,11 +11,11 @@
 
   &__link:hover,
   &__link:focus {
-    color: rgba(0, 0, 0, 0.6);
+    opacity: 0.6;
   }
 
   &__link:active {
-    color: rgba(0, 0, 0, 0.3);
+    opacity: 0.3;
   }
 
   &__link--basket {
@@ -26,12 +26,9 @@
     display: flex;
   }
 
-  &__link svg {
-    margin-right: 25px;
-  }
-
-  &__link path {
+  &__icon {
     fill: $alto;
+    margin-right: 25px;
   }
 }
 
@@ -47,32 +44,32 @@
       font-size: 0;
     }
 
-    &__link--search:hover path,
-    &__link--search:focus path {
+    &__link--search:hover .user-list__icon,
+    &__link--search:focus .user-list__icon {
       fill: $light-green;
     }
 
-    &__link--search:active path {
-      fill: rgba(99, 209, 187, 0.3);
+    &__link--search:active .user-list__icon {
+      opacity: 0.3;
     }
 
     &__link--basket {
       padding: 31px 0 34px 0;
     }
 
-    &__link--basket svg {
+    &__link--basket .user-list__icon {
       margin-left: 30px;
       margin-right: 30px;
       margin-top: 2px;
     }
 
-    &__link--basket:hover path,
-    &__link--basket:focus path {
+    &__link--basket:hover .user-list__icon,
+    &__link--basket:focus .user-list__icon {
       fill: $light-green;
     }
 
-    &__link--basket:active path {
-      fill: rgba(99, 209, 187, 0.3);
+    &__link--basket:active .user-list__icon {
+      opacity: 0.3;
     }
   }
 }

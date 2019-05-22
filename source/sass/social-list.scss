@@ -13,10 +13,6 @@
     padding-left: 44px;
   }
 
-  &__icon {
-    fill: fill="#231F20";
-  }
-
   &__link:hover .social-list__icon,
   &__link:focus .social-list__icon {
     fill: $light-green;

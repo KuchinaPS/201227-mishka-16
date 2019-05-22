@@ -61,7 +61,8 @@
       padding-top: 50px;
     }
 
-    &__logo:hover svg {
+    &__logo:hover svg,
+    &__logo:focus svg {
       fill: $puerto-rico;
     }
 

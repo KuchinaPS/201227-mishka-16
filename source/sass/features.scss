@@ -2,7 +2,7 @@
 
 .features {
   &__item {
-    padding: 66px 41px 19px 30px;
+    padding: 76px 41px 9px 30px;
     position: relative;
   }
 
@@ -22,7 +22,7 @@
     content: "";
     position: absolute;
     left: 34px;
-    top: 14px;
+    top: 23px;
     width: 30px;
     height: 30px;
     background-repeat: no-repeat;
@@ -72,7 +72,7 @@
       margin-right: -38px;
       font-size: $tablet-up-sub;
       line-height: $tablet-feature-line;
-      padding: 67px 47px 44px 36px;
+      padding: 104px 47px 6px 36px;
     }
 
     &__item:first-child {
@@ -87,9 +87,13 @@
       padding-right: 104px;
     }
 
+    &__item::before {
+      top: 50px;
+    }
+
     &__item--photo::before {
       left: 42px;
-      top: 19px;
+
     }
 
     &__item--style {
@@ -117,7 +121,7 @@
 @media (min-width: $desktop-width) {
   .features {
     &__item {
-      padding: 56px 23px 56px 32px;
+      padding: 100px 23px 12px 32px;
       margin-right: 0;
     }
 
@@ -135,7 +139,7 @@
 
     &__item::before {
       left: 36px;
-      top: 4px;
+      top: 48px;
     }
   }
 }

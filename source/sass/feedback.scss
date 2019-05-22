@@ -3,13 +3,13 @@
 .feedback {
   &__title {
     font-size: $mobile-h2;
-    margin-top: 38px;
-    padding-left: 30px;
+    margin: 9px 0 0 0;
+    padding: 28px 30px 0;
   }
 
   &__content {
     color: $tundora;
-    margin-top: 24px;
+    margin-top: 14px;
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -31,7 +31,8 @@
 
   &__wrap-button {
     width: 260px;
-    margin: 30px;
+    margin: 0 30px;
+    padding: 21px 0 0;
   }
 
   &__arrow {
@@ -65,14 +66,14 @@
   }
 
   &__button {
-    padding: 15px 0 14px 0;
-    margin: 36px 30px;
+    padding: 14px 0;
+    margin: 40px 30px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .feedback {
-    margin-top: 40px;
+    margin-top: 78px;
 
     &__container {
       display: flex;
@@ -97,7 +98,7 @@
     }
 
     &__content {
-      margin-top: 10px;
+      margin-top: 6px;
       font-size: $mobile-up-desc;
       line-height: $tablet-star-line;
       padding-left: 50px;
@@ -116,7 +117,7 @@
 
     &__wrap-button {
       order: 3;
-      margin: -55px -16px 48px auto;
+      margin: -74px -16px 48px auto;
     }
 
     &__arrow {
@@ -128,7 +129,7 @@
     &__title {
       font-size: $tablet-h1;
       line-height: $tableth1-lineh;
-      margin-top: 78px;
+      margin-top: 48px;
       padding-left: 50px;
     }
 
@@ -141,10 +142,9 @@
   }
 }
 
-
 @media (min-width: $desktop-width) {
   .feedback {
-    margin-top: 34px;
+    margin-top: 76px;
 
     &__container {
       padding: 0 50px 61px;
@@ -159,7 +159,7 @@
     &__title {
       font-size: $desktop-h1;
       line-height: $desktoph1-lineh;
-      margin-top: 71px;
+      margin-top: 45px;
       padding-left: 170px;
     }
 
@@ -180,7 +180,7 @@
     }
 
     &__wrap-button {
-      margin: -55px -66px 35px auto;
+      margin: -73px -66px 35px auto;
     }
 
     &__button {

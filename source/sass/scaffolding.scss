@@ -1,3 +1,5 @@
+@import "variables";
+
 html {
   box-sizing: border-box;
 }
@@ -10,8 +12,8 @@ html {
 
 body {
   font-family: "Open Sans", "Arial", "Verdana", sans-serif;
-  font-size: 15px;
-  line-height: 30px;
+  font-size: $mobile-desc;
+  line-height: $tablet-desc-line;
   font-weight: 400;
   color: #000000;
   margin: 0;

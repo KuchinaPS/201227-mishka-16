@@ -1,0 +1,23 @@
+@import "../variables";
+
+.page-order__description {
+  color: $tundora;
+  font-size: $mobile-low;
+  line-height: $mobile-desc-line;
+  padding: 22px 30px 10px 30px;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .page-order__description {
+    font-size: $mobile-up-desc;
+    line-height: $tablet-star-line;
+    padding: 73px 50px 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-order__description {
+    padding: 125px 225px 0;
+  }
+}

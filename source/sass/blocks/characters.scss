@@ -1,0 +1,18 @@
+@import "../variables";
+
+.characters {
+  border-collapse: collapse;
+}
+
+.characters__title {
+  font-weight: 400;
+  padding-right: 27px;
+  padding-top: 10px;
+  padding-bottom: 11px;
+  border-bottom: 1px solid $gallery;
+}
+
+.characters__desc {
+  border-bottom: 1px solid $gallery;
+  padding-right: 28px;
+}

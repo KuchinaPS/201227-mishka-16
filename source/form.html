@@ -6,8 +6,9 @@
   <meta name="format-detection" content="telephone=no">
   <title>HTML Academy: Мишка-Заказ</title>
   <link href="css/normalize.css" rel="stylesheet">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
   <link href="css/style.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
 <div style="display:none">
@@ -23,7 +24,7 @@
           <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип">
         </picture>
       </a>
-      <nav class="main-navigation main-navigation__button-menu--nojs">
+      <nav class="main-navigation main-navigation__button-menu main-navigation__button-menu--nojs">
         <div class="main-navigation__container">
           <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
           </button>
@@ -80,10 +81,10 @@
           <h3 class="filter-form__title">Тип</h3>
           <div class="filter-form__control filter-form__control--radio">
             <input class="filter-form__input filter-form__input--radio" type="radio" id="accessories" value="Аксессуар для интерьера" name="radio-selector" checked="">
-            <label class="filter-form__label-title filter-form__label--radio" for="accessories">Аксессуар для
+            <label class="filter-form__label-title filter-form__label-title--radio" for="accessories">Аксессуар для
               интерьера</label>
             <input class="filter-form__input filter-form__input--radio" type="radio" id="toy" value="Детская игрушка" name="radio-selector">
-            <label class="filter-form__label-title filter-form__label--radio" for="toy">Детская игрушка</label>
+            <label class="filter-form__label-title filter-form__label-title--radio" for="toy">Детская игрушка</label>
           </div>
         </div>
       </div>
@@ -94,17 +95,17 @@
           <h3 class="filter-form__title filter-form__title--color">Цвет</h3>
           <div class="filter-form__control filter-form__control--color">
             <input class="filter-form__input filter-form__input--check" type="checkbox" id="color-white" value="Белый" name="check-selector" checked="">
-            <label class="filter-form__label-title  filter-form__label--check" for="color-white">Белый</label>
+            <label class="filter-form__label-title filter-form__label-title--check" for="color-white">Белый</label>
             <input class="filter-form__input filter-form__input--check" type="checkbox" id="color-gray" value="Серый" name="check-selector" checked="">
-            <label class="filter-form__label-title filter-form__label--check" for="color-gray">Серый</label>
+            <label class="filter-form__label-title filter-form__label-title--check" for="color-gray">Серый</label>
             <input class="filter-form__input filter-form__input--check" type="checkbox" id="color-tiffany" value="«Тиффани»" name="check-selector">
-            <label class="filter-form__label-title filter-form__label--check" for="color-tiffany">«Тиффани»</label>
+            <label class="filter-form__label-title filter-form__label-title--check" for="color-tiffany">«Тиффани»</label>
             <input class="filter-form__input filter-form__input--check" type="checkbox" id="color-black" value="Черный" name="check-selector">
-            <label class="filter-form__label-title filter-form__label--check" for="color-black">Черный</label>
+            <label class="filter-form__label-title filter-form__label-title--check" for="color-black">Черный</label>
             <input class="filter-form__input filter-form__input--check" type="checkbox" id="color-pink" value="Розовый" name="check-selector">
-            <label class="filter-form__label-title filter-form__label--check" for="color-pink">Розовый</label>
+            <label class="filter-form__label-title filter-form__label-title--check" for="color-pink">Розовый</label>
             <input class="filter-form__input filter-form__input--check" type="checkbox" id="color-orange" value="Оранжевый" name="check-selector">
-            <label class="filter-form__label-title filter-form__label--check" for="color-orange">Оранжевый</label>
+            <label class="filter-form__label-title filter-form__label-title--check" for="color-orange">Оранжевый</label>
           </div>
         </div>
       </div>
@@ -155,7 +156,7 @@
     <fieldset class="filter-form__group">
       <div class="wrapper">
         <div class="filter-form__container-group filter-form__container-group--add">
-          <h3 class="filter-form__title filter-form__title__add">Доп</h3>
+          <h3 class="filter-form__title filter-form__title--add">Доп</h3>
           <div class="filter-form__control filter-form__control--add">
             <label class="filter-form__input-title visually-hidden" for="input-add">Доп</label>
             <textarea class="filter-form__field" id="input-add" placeholder="Опишите все свои пожелания к заказу"></textarea>

@@ -1,4 +1,4 @@
-@import "variables";
+@import "../variables";
 
 .button {
   border: 2px solid $tundora;
@@ -10,14 +10,15 @@
   display: block;
   text-align: center;
   text-transform: uppercase;
-
-  &:hover,
-  &:focus {
-    background-color: $tundora;
-    color: #ffffff;
-  }
-
-  &:active {
-    color: rgba(255, 255, 255, 0.3);
-  }
 }
+
+.button:hover,
+.button:focus {
+  background-color: $tundora;
+  color: #ffffff;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+

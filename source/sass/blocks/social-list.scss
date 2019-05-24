@@ -1,0 +1,39 @@
+@import "../variables";
+
+.social-list {
+  list-style: none;
+  display: flex;
+  margin-bottom: 0;
+}
+
+.social-list__item {
+  padding: 31px 0 41px 0;
+}
+
+.social-list__link {
+  padding-left: 44px;
+}
+
+.social-list__link:hover .social-list__icon,
+.social-list__link:focus .social-list__icon {
+  fill: $light-green;
+}
+
+.social-list__link:active .social-list__icon {
+  fill: rgba(99, 209, 187, 0.3);
+}
+
+@media (min-width: $tablet-width) {
+  .social-list {
+    padding-right: 9px;
+    margin-top: 32px;
+  }
+
+  .social-list__item {
+    padding: 31px 0 0 0;
+  }
+
+  .social-list__link {
+    padding-left: 43px;
+  }
+}

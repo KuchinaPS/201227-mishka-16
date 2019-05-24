@@ -1,0 +1,475 @@
+@import "../variables";
+
+.filter-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-form__group {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filter-form__container-group {
+  padding: 0 30px 7px 30px;
+  margin: 0;
+}
+
+.filter-form__container-group--phone {
+  margin-top: -5px;
+  padding-bottom: 5px;
+}
+
+.filter-form__container-group--add {
+  padding-bottom: 0;
+}
+
+.filter-form__title {
+  font-size: $mobile-up-desc;
+  line-height: $mobile-form-line;
+  font-weight: $font-bold;
+  color: $light-green;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.filter-form__title::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: 0;
+  width: 198px;
+  height: 1px;
+  background-color: $downy;
+}
+
+.filter-form__title--color {
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+.filter-form__title--tel {
+  margin-bottom: 10px;
+}
+
+.filter-form__title--mail {
+  margin-bottom: 7px;
+}
+
+.filter-form__control {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.filter-form__label-title {
+  font-size: $mobile-up-desc;
+  line-height: $mobile-label-line;
+  font-weight: $font-bold;
+  padding-top: 12px;
+}
+
+.filter-form__input--radio {
+  display: none;
+}
+
+.filter-form__label-title--radio {
+  position: relative;
+  padding: 16px 0 8px 63px;
+}
+
+.filter-form__label-title--radio::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 0;
+  width: 38px;
+  height: 38px;
+  border: 2px solid $tundora;
+  border-radius: 50%;
+}
+
+.filter-form__input--radio:checked + .filter-form__label-title--radio::after {
+  content: "";
+  position: absolute;
+  top: 19px;
+  left: 11px;
+  width: 16px;
+  height: 16px;
+  background-color: $downy;
+  border-radius: 50%;
+}
+
+.filter-form__label-title--radio:hover::before,
+.filter-form__label-title--radio:focus::before {
+  border-color: $downy;
+}
+
+.filter-form__label-title--radio:active::before {
+  border-color: $silver;
+}
+
+.filter-form__input--check {
+  display: none;
+}
+
+.filter-form__label-title--check {
+  position: relative;
+  width: 191px;
+  padding: 28px 0 16px 63px;
+}
+
+.filter-form__label-title--check::before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: 0;
+  width: 39px;
+  height: 39px;
+  border: 2px solid black;
+}
+
+.filter-form__input--check:checked + .filter-form__label-title--check::after {
+  content: "";
+  position: absolute;
+  top: 23px;
+  left: 4px;
+  width: 37px;
+  height: 37px;
+  background-image: url("../../img/icon-tick.svg");
+  background-repeat: no-repeat;
+}
+
+.filter-form__label-title--check:hover::before,
+.filter-form__label-title--check:focus::before {
+  border-color: $downy;
+}
+
+.filter-form__label-title--check:active::before {
+  border-color: $silver;
+}
+
+.filter-form__input[type="text"],
+.filter-form__input[type="tel"],
+.filter-form__input[type="email"] {
+  border: none;
+  font-size: $mobile-up-desc;
+  line-height: $mobile-label-line;
+  border-bottom: 2px solid #000000;
+  padding: 6px 0 11px 0;
+  margin: 10px 0 10px 0;
+  outline: none;
+}
+
+.filter-form__field {
+  margin-top: 4px;
+  width: 258px;
+  min-height: 142px;
+  border: 2px solid $tundora;
+  resize: none;
+  padding: 13px 10px 10px 15px;
+  font-size: $mobile-up-desc;
+  line-height: $mobile-label-line;
+  outline: none;
+}
+
+.filter-form__input[type="text"]::placeholder,
+.filter-form__input[type="tel"]::placeholder,
+.filter-form__input[type="email"]::placeholder,
+.filter-form__field::placeholder {
+  font-size: $mobile-up-desc;
+  line-height: $mobile-label-line;
+}
+
+.filter-form__input:hover,
+.filter-form__field:hover,
+.filter-form__input:focus,
+.filter-form__field:focus,
+.filter-form__input:active,
+.filter-form__field:active {
+  border-color: $downy;
+}
+
+.filter-form__icon {
+  position: absolute;
+  right: 6px;
+  top: 12px;
+  fill: #cccccc;
+}
+
+.filter-form__input[type="tel"]:hover + .filter-form__icon,
+.filter-form__input[type="email"]:hover + .filter-form__icon,
+.filter-form__input[type="tel"]:focus + .filter-form__icon,
+.filter-form__input[type="email"]:focus + .filter-form__icon,
+.filter-form__input[type="tel"]:active + .filter-form__icon,
+.filter-form__input[type="email"]:active + .filter-form__icon {
+  fill: $downy;
+}
+
+.filter-form__bottom-star {
+  font-size: $mobile-star;
+  line-height: $mobile-star-line;
+  color: $tundora;
+  margin-top: 16px;
+  padding: 0 30px 0 30px;
+}
+
+.filter-form__button {
+  background-color: #ffffff;
+  margin: 15px 30px 35px 30px;
+  padding: 15px 0 15px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .filter-form__group--background {
+    background-color: $seashell;
+  }
+
+  .filter-form__container-group {
+    padding: 50px 50px 26px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .filter-form__container-group--type {
+    padding: 57px 50px 29px;
+  }
+
+  .filter-form__container-group--color {
+    padding: 36px 50px 42px;
+  }
+
+  .filter-form__container-group--name {
+    padding: 53px 50px 22px;
+  }
+
+  .filter-form__container-group--phone {
+    padding: 52px 50px 15px;
+    margin-top: 2px;
+  }
+
+  .filter-form__container-group--mail {
+    padding: 0 50px 22px;
+    margin-top: -14px;
+  }
+
+  .filter-form__container-group--add {
+    padding: 45px 54px 15px;
+    margin-top: 2px;
+  }
+
+  .filter-form__title::after {
+    width: 0;
+  }
+
+  .filter-form__control {
+    padding: 0 0 0 124px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .filter-form__control--radio {
+    padding: 0 0 0 167px;
+  }
+
+  .filter-form__control--bottom {
+    padding: 0 50px;
+    margin-top: 36px;
+  }
+
+  .filter-form__bottom-star {
+    order: 2;
+    font-size: $mobile-up-desc;
+    line-height: $tablet-star-line;
+    margin: 0;
+    padding: 10px 0;
+  }
+
+  .filter-form__label-title {
+    font-size: $mobile-up-sub;
+    line-height: $tablet-label-line;
+    font-weight: $font-bold;
+  }
+
+  .filter-form__label-title--radio {
+    width: 316px;
+    padding: 15px 0 42px 44px;
+  }
+
+  .filter-form__label-title--radio::before {
+    top: 0;
+    left: -38px;
+    width: 53px;
+    height: 51px;
+  }
+
+  .filter-form__input--radio:checked + .filter-form__label-title--radio::after {
+    top: 15px;
+    left: -23px;
+    width: 22px;
+    height: 22px;
+  }
+
+  .filter-form__label-title--check {
+    padding: 30px 0 27px 80px;
+    width: 238px;
+  }
+
+  .filter-form__label-title--check::before {
+    width: 52px;
+    height: 52px;
+    top: 14px;
+  }
+
+  .filter-form__input--check:checked + .filter-form__label-title--check::after {
+    top: 30px;
+    left: 10px;
+  }
+
+  .filter-form__input[type="text"],
+  .filter-form__input[type="tel"],
+  .filter-form__input[type="email"] {
+    font-size: $mobile-up-sub;
+    line-height: $tablet-label-line;
+    width: 375px;
+    min-height: 19px;
+    padding: 8px 0 12px 17px;
+    margin: 0 0 28px 0;
+  }
+
+  .filter-form__field {
+    width: 501px;
+    padding: 12px 0 0 16px;
+  }
+
+  .filter-form__input[type="text"]::placeholder,
+  .filter-form__input[type="tel"]::placeholder,
+  .filter-form__input[type="email"]::placeholder,
+  .filter-form__field::placeholder {
+    font-size: $mobile-up-sub;
+    line-height: $tablet-label-line;
+  }
+
+  .filter-form__input[type="tel"] {
+    width: 501px;
+    margin-left: 6px;
+    background-color: $seashell;
+  }
+
+  .filter-form__input[type="email"] {
+    width: 502px;
+    margin-left: -16px;
+    background-color: $seashell;
+  }
+
+  .filter-form__input--name[type="text"] {
+    width: 428px;
+  }
+
+  .filter-form__input::-ms-clear {
+    display: none;
+  }
+
+  .filter-form__icon {
+    right: 22px;
+    top: 10px;
+  }
+
+  .filter-form__button {
+    margin: 0 0 49px 0;
+    width: 230px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .filter-form__container-group {
+    padding: 57px 15px 26px 113px;
+  }
+
+  .filter-form__container-group--color {
+    padding: 37px 15px 42px 113px;
+  }
+
+  .filter-form__container-group--name {
+    padding: 53px 15px 23px 113px;
+  }
+
+  .filter-form__container-group--phone {
+    padding: 51px 15px 14px 113px;
+  }
+
+  .filter-form__container-group--mail {
+    padding: 0 15px 23px 113px;
+  }
+
+  .filter-form__container-group--add {
+    padding: 45px 15px 12px 113px;
+  }
+
+  .filter-form__control--color {
+    padding: 0 0 0 69px;
+    justify-content: flex-start;
+  }
+
+  .filter-form__control--name {
+    padding: 0 0 0 71px;
+    justify-content: flex-start;
+  }
+
+  .filter-form__control--phone {
+    padding: 0 0 0 54px;
+  }
+
+  .filter-form__control--mail {
+    padding: 0 0 0 32px;
+  }
+
+  .filter-form__control--add {
+    padding: 0 0 0 73px;
+  }
+
+  .filter-form__control--bottom {
+    padding: 0 225px;
+  }
+
+  .filter-form__control--radio {
+    padding: 0 0 0 112px;
+    flex-direction: column;
+  }
+
+  .filter-form__label-title--check {
+    width: 263px;
+  }
+
+  .filter-form__input[type="text"],
+  .filter-form__input[type="tel"],
+  .filter-form__input[type="email"] {
+    width: 573px;
+    justify-content: flex-start;
+    margin-left: 26px;
+    margin-right: 115px;
+  }
+
+  .filter-form__input--name[type="text"] {
+    width: 626px;
+    margin-right: 113px;
+  }
+
+  .filter-form__input[type="tel"],
+  .filter-form__input[type="email"] {
+    width: 700px;
+    margin-left: 22px;
+  }
+
+  .filter-form__icon {
+    right: 120px;
+  }
+
+  .filter-form__field {
+    width: 700px;
+  }
+}

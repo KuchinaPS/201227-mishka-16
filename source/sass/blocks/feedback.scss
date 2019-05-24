@@ -1,0 +1,228 @@
+@import "../variables";
+
+.feedback__container {
+  position: relative;
+}
+
+.feedback__container::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  bottom: -50px;
+  left: 0;
+  background-image: url("../../img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-size: auto 6px;
+  transform: translate(0%);
+}
+
+.feedback__title {
+  font-size: $mobile-h2;
+  margin: 9px 0 0 0;
+  padding: 28px 30px 0;
+}
+
+.feedback__content {
+  color: $tundora;
+  margin-top: 14px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.feedback__sign {
+  font-size: $mobile-up-desc;
+  font-weight: $font-bold;
+  margin-top: 24px;
+  margin-bottom: 0;
+  padding-left: 30px;
+}
+
+.feedback__nickname {
+  font-size: $mobile-up-desc;
+  color: $tundora;
+  margin-top: 0;
+  padding-left: 30px;
+}
+
+.feedback__wrap-button {
+  width: 260px;
+  margin: 0 30px;
+  padding: 21px 0 0;
+}
+
+.feedback__arrow {
+  background-color: #ffffff;
+  border: 1px solid $gallery;
+  height: 52px;
+  width: 130px;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-position: 38px 12px;
+  font-size: 0;
+}
+
+.feedback__arrow:hover,
+.feedback__arrow:focus {
+  opacity: 0.6;
+}
+
+.feedback__arrow:active {
+  opacity: 0.3;
+}
+
+.feedback__arrow--back {
+  margin-right: -4px;
+  margin-left: -1px;
+  background-image: url("../../img/icon-left-arrow.svg");
+}
+
+.feedback__arrow--next {
+  background-image: url("../../img/icon-right-arrow.svg");
+}
+
+.feedback__button {
+  padding: 14px 0;
+  margin: 40px 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback {
+    margin-top: 78px;
+  }
+
+  .feedback__container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 50px;
+    justify-content: space-between;
+    background-image: url("../../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 350px auto;
+    position: relative;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/review@2x.jpg");
+      background-size: 350px auto;
+    }
+  }
+
+  .feedback__container::after {
+    width: 100%;
+    height: 17px;
+    bottom: -84px;
+    left: 0;
+    background-size: auto 17px;
+    transform: translate(0%);
+  }
+
+  .feedback__title {
+    font-size: $tablet-h1;
+    line-height: $tableth1-lineh;
+    margin-top: 48px;
+    padding: 29px 0 0 0;
+  }
+
+  .feedback__wrap-content {
+    display: flex;
+    flex-direction: column;
+    order: 2;
+    font-size: $mobile-up-desc;
+    line-height: $tablet-star-line;
+    padding-top: 41px;
+  }
+
+  .feedback__content {
+    margin-top: 6px;
+    font-size: $mobile-up-desc;
+    line-height: $tablet-star-line;
+    padding: 0;
+    width: 643px;
+  }
+
+  .feedback__sign {
+    font-size: $mobile-contact;
+    margin-top: 37px;
+    padding: 0;
+    width: 260px;
+  }
+
+  .feedback__nickname {
+    padding: 0;
+    width: 260px;
+  }
+
+  .feedback__wrap-button {
+    order: 3;
+    margin: -74px 0 46px auto;
+    width: 175px;
+  }
+
+  .feedback__arrow {
+    border: none;
+    background-color: transparent;
+    width: 88px;
+    background-position: 20px 10px;
+  }
+
+  .feedback__button {
+    width: 175px;
+    margin: 78px 0 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback {
+    margin-top: 76px;
+  }
+
+  .feedback__container {
+    padding: 0 50px 61px;
+    background-position: 50px 0;
+  }
+
+  .feedback__container::after {
+    width: 1050px;
+    height: 23px;
+    bottom: -92px;
+    left: 50px;
+    background-size: auto 23px;
+    transform: translate(0%);
+  }
+
+  .feedback__wrap-content {
+    padding-left: 175px;
+    padding-right: 80px;
+  }
+
+  .feedback__title {
+    font-size: $desktop-h1;
+    line-height: $desktoph1-lineh;
+    margin-top: 45px;
+    padding-left: 170px;
+  }
+
+  .feedback__content {
+    margin-top: 5px;
+    width: 780px;
+  }
+
+  .feedback__sign {
+    margin-top: 18px;
+    font-size: $mobile-up-desc;
+    line-height: $tablet-star-line;
+    padding: 0;
+  }
+
+  .feedback__nickname {
+    padding: 0;
+  }
+
+  .feedback__wrap-button {
+    margin: -73px 0 34px auto;
+  }
+
+  .feedback__button {
+    margin-right: 0;
+  }
+}

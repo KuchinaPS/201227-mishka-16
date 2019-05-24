@@ -1,0 +1,58 @@
+@import "../variables";
+
+.modal {
+  width: 320px;
+  min-height: 336px;
+  margin: 0 auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-52%, -50%);
+  background-color: #ffffff;
+  border: 1px solid $silver;
+  box-shadow: 0 5px 10px $silver;
+  padding: 30px;
+  display: none;
+  z-index: 15;
+}
+
+.modal__title {
+  font-size: $mobile-h2;
+  line-height: $mobile-form-title;
+  font-weight: $font-bold;
+  width: 150px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.modal__overlay--show {
+  display: block;
+  z-index: 11;
+}
+
+@media (min-width: $tablet-width) {
+  .modal {
+    width: 567px;
+    min-height: 336px;
+    transform: translate(-51%, -50%);
+  }
+
+  .modal__title {
+    font-size: $tablet-modal;
+    line-height: $tablet-modal-line;
+    font-weight: $font-bold;
+    text-align: center;
+    width: 354px;
+  }
+}

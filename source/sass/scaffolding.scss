@@ -1,5 +1,21 @@
 @import "variables";
 
+@font-face {
+  font-weight: normal;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
+}
+
+@font-face {
+  font-weight: bold;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
+}
+
 html {
   box-sizing: border-box;
 }
@@ -20,6 +36,19 @@ body {
   padding: 0;
   min-width: 320px;
   box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+@media (min-width: $tablet-width) {
+  body {
+    min-width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  body {
+    min-width: 1150px;
+  }
 }
 
 a {

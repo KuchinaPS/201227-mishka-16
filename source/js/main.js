@@ -1,4 +1,4 @@
-var main_navigation = document.querySelector('.main-navigation');
+var main_navigation_button_menu = document.querySelector('.main-navigation__button-menu');
 var modal = document.querySelector('.modal');
 var overlay = document.querySelector('.modal__overlay');
 var product_hit__button = document.querySelector('.product-hit__button');
@@ -6,12 +6,12 @@ var products__baskets = document.querySelectorAll('.products__basket');
 var main_navigation__toggle = document.querySelector('.main-navigation__toggle');
 
 function ShowMainNavigationHandler() {
-  if (main_navigation.classList.contains('main-navigation__button-menu--closed')) {
-    main_navigation.classList.remove('main-navigation__button-menu--closed');
-    main_navigation.classList.add('main-navigation__button-menu--opened');
+  if (main_navigation_button_menu.classList.contains('main-navigation__button-menu--closed')) {
+    main_navigation_button_menu.classList.remove('main-navigation__button-menu--closed');
+    main_navigation_button_menu.classList.add('main-navigation__button-menu--opened');
   } else {
-    main_navigation.classList.add('main-navigation__button-menu--closed');
-    main_navigation.classList.remove('main-navigation__button-menu--opened');
+    main_navigation_button_menu.classList.add('main-navigation__button-menu--closed');
+    main_navigation_button_menu.classList.remove('main-navigation__button-menu--opened');
   }
 }
 
@@ -32,9 +32,9 @@ function AddEventToProductBaskets(products__baskets) {
 }
 
 function Initialization() {
-  if (main_navigation) {
-    main_navigation.classList.remove('main-navigation__button-menu--nojs');
-    main_navigation.classList.add('main-navigation__button-menu--closed');
+  if (main_navigation_button_menu) {
+    main_navigation_button_menu.classList.remove('main-navigation__button-menu--nojs');
+    main_navigation_button_menu.classList.add('main-navigation__button-menu--closed');
   }
   if (product_hit__button) product_hit__button.addEventListener('click', ShowModalHandler);
   if (products__baskets) AddEventToProductBaskets(products__baskets);

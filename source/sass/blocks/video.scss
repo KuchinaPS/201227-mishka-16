@@ -28,7 +28,7 @@
   padding-left: 90px;
   padding-right: 40px;
   margin: 25px 0 25px;
-  background-image: url("../../img/icon-video.svg");
+  background-image: url("../img/icon-video.svg");
   background-repeat: no-repeat;
   background-position: 33px 5px;
   order: 0;
@@ -53,12 +53,12 @@
   align-items: center;
   order: 1;
   background-color: $iceberg;
-  background-image: url("../../img/video-mobile@1x.jpg");
+  background-image: url("../img/video-mobile@1x.jpg");
   background-repeat: no-repeat;
   height: 150px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../../img/video-mobile@2x.jpg");
+    background-image: url("../img/video-mobile@2x.jpg");
     background-size: 260px auto;
   }
 }
@@ -97,12 +97,12 @@
   }
 
   .video__image {
-    background-image: url("../../img/video-tablet@1x.jpg");
+    background-image: url("../img/video-tablet@1x.jpg");
     width: 668px;
     height: 455px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/video-tablet@2x.jpg");
+      background-image: url("../img/video-tablet@2x.jpg");
       background-size: 668px auto;
     }
   }
@@ -145,12 +145,12 @@
   }
 
   .video__image {
-    background-image: url("../../img/video-desktop@1x.jpg");
+    background-image: url("../img/video-desktop@1x.jpg");
     width: 683px;
     height: 455px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/video-desktop@2x.jpg");
+      background-image: url("../img/video-desktop@2x.jpg");
       background-size: 683px auto;
     }
   }
